@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Diagnostika alergií",
+      "imageSrc": "/assets/images/diagnostic.jpg",
+      "imageAlt": "Diagnostika alergií",
+      "description": "Poskytujeme kvalitné vyšetrenia na rôzne druhy alergií, aby sme vám pomohli nájsť správnu liečbu."
+    },
+    {
+      "title": "Liečba alergií",
+      "imageSrc": "/assets/images/liecba.jpg",
+      "imageAlt": "Liečba alergií",
+      "description": "Naša liečba je prispôsobená vašim individuálnym potrebám. Využívame moderné metódy, ktoré sú bezpečné a efektívne."
+    },
+    {
+      "title": "Poradenstvo",
+      "imageSrc": "/assets/images/poradenstvo.jpg",
+      "imageAlt": "Poradenstvo",
+      "description": "Poskytujeme poradenstvo pre pacientov, ktorí chcú lepšie pochopiť, ako zvládnuť svoju alergiu a zlepšiť kvalitu života."
+    }
+  ]
+  

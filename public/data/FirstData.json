@@ -1,0 +1,46 @@
+{
+    "heading": "Prvé vyšetrenie",
+    "importantNotice": [
+      "* Vzhľadom k objednávaniu niekoľko týždňov či mesiacov vopred vás prosíme, aby ste si večer pred termínom overili na našej stránke, či nasledujúci deň ordinujeme."
+    ],
+    "importantWarnings": [
+      "Ordinujeme iba počas pracovných dní podľa uverejnených ordinačných hodín.",
+      "Vyhýbajte sa zámene mesiaca alebo predpokladu, že ordinujeme cez víkend."
+    ],
+    "whatYouNeed": [
+      {
+        "title": "1. Odporúčanie od lekára",
+        "description": "Odporúčanie je nevyhnutné, aby sme mohli účtovať vyšetrenie vašej zdravotnej poisťovni.",
+        "items": [
+          "Od lekára zmluvného s vašou poisťovňou.",
+          "Ak odporúčajúci lekár nemá zmluvu, vyšetrenie si pacient hradí sám."
+        ]
+      },
+      {
+        "title": "2. Obsah odporúčania",
+        "description": "Odporúčanie musí obsahovať:",
+        "items": [
+          "Výpis zo zdravotnej dokumentácie (opis zdravotného stavu, výsledky vyšetrení, prehľad liečby).",
+          "Cieľ a odôvodnenie odporúčania.",
+          "Dátum vystavenia a identifikáciu ošetrujúceho lekára."
+        ]
+      }
+    ],
+    "appointmentMethods": [
+      "Osobne u zdravotnej sestry.",
+      "Telefonicky: 033 5953 414.",
+      "Cez portál Medikarta.sk (poplatok hradíte prevádzkovateľovi portálu)."
+    ],
+    "firstExaminationTimes": {
+      "Monday": ["10:30", "12:30"],
+      "Tuesday": ["10:00", "12:00"],
+      "Wednesday": ["9:00", "11:00"],
+      "Thursday": ["10:00", "13:40"],
+      "Friday": ["9:00", "9:30", "11:00"]
+    },
+    "warnings": [
+      "Na kontrolné vyšetrenia slúžia ostatné termíny.",
+      "Piatkové termíny sa sprístupňujú neskôr z dôvodu možných zmien (choroba, výluky)."
+    ]
+  }
+  

@@ -1,0 +1,17 @@
+{
+    "title": "Základný systém objednávania",
+    "orderingOptions": [
+      "osobne",
+      "telefonicky: 033 5953 414",
+      "cez internet"
+    ],
+    "buttonText": "Medikarta portál",
+    "buttonLink": "https://www.medikarta.sk/lekar/",
+    "paragraphs": [
+      "Pri osobnom, alebo telefonickom objednaní sestrička termín pridelí Pondelok až Štvrtok v intervaloch 8-10:00 hod. 10-12:00 hod. teda v dvojhodinových intervaloch. Dostavte sa v stanovený deň v danom intervale, najneskôr však hodinu pred koncom intervalu, a máte garanciu, že do konca ordinačnej doby budete ošetrení.",
+      "Nakoľko sme odbor, v ktorom je pomerne častá možnosť akútne vzniknutého zdravotného problému (astmatický záchvat, žihľavka, opuchový stav...), nedokážeme vylúčiť posun v plánovanom čase vyšetrenia.",
+      "Piatok je vyhradený len na objednávky cez Medikarta portál a termíny sa otvoria vždy v stredu na obed v príslušný týždeň."
+    ],
+    "imageSrc": "/assets/images/medikarta.png"
+  }
+  

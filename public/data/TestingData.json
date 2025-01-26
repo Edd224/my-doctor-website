@@ -1,0 +1,25 @@
+{
+    "sectionTitle": "Testovanie",
+    "sections": [
+      {
+        "title": "Čo je testovanie?",
+        "content": "Testovanie je diagnostický výkon pri ktorom zisťujeme schopnosť organizmu reagovať alergickým spôsobom na alergény z nášho prostredia..."
+      },
+      {
+        "title": "Pozitívna a negatívna kontrola",
+        "content": "Súčasťou každej testovacej sady je aj kvapka histamínu (pozitívna kontrola) a čistého rozpúšťadla bez alergénu..."
+      },
+      {
+        "title": "Príprava na testovanie",
+        "content": "POZOR: Pred testovaním sa aspoň 7 dní nesmie užívať žiadna celková antialergická liečba! Výsledok by mohol byť falošne negatívny..."
+      },
+      {
+        "images": [
+          "/assets/images/DSC_1090 (1).jpg",
+          "/assets/images/testy-01.jpg",
+          "/assets/images/testy-02.jpg"
+        ]
+      }
+    ]
+  }
+  

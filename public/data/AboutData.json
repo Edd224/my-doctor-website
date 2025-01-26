@@ -1,0 +1,52 @@
+{
+    "sectionTitle": "O nás",
+    "openingHours": {
+      "title": "ORDINAČNÉ HODINY",
+      "items": [
+        { "day": "Pondelok", "hours": "07:00-14:30" },
+        { "day": "Utorok", "hours": "07:00-14:30" },
+        { "day": "Streda", "hours": "07:00-14:30" },
+        { "day": "Štvrtok", "hours": "07:00-14:30" },
+        { "day": "Piatok", "hours": "07:00-09:30 (len po dohovore)" }
+      ],
+      "address": "Ľ. Štúra 1920, 01901 Ilava",
+      "mapLink": "https://www.google.com/maps?q=%C4%BD.+%C5%A0t%C3%BAra+1920,+01901+Ilava"
+    },
+    "information": {
+      "title": "Informácie",
+      "details": [
+        "Vyšetrujeme len dospelých pacientov",
+        "Poradie pacientov prichádzajúcich na injekciu určujeme my, bez poradového čísla",
+        "Telefóny vybavujeme po 13.00 hod.",
+        "Pacienta s č.4 prosíme prísť na 8,15 hod., na hodinu potom pripadajú orientačne 4 pacienti",
+        "Noví pacienti - rezervácia len telefonicky po 12:00hod."
+      ]
+    },
+    "additionalInfo": {
+      "title": "Doplnkové informácie",
+      "details": [
+        "Bývalá hematológia - vľavo pri vstupe do nemocnice",
+        "Autobusová doprava: zastávka Ilava - nemocnica"
+      ],
+      "features": [
+        { "icon": "Car", "label": "Parkovanie" },
+        { "icon": "Wheelchair", "label": "Bezbariérový prístup" },
+        { "icon": "Timer", "label": "Časenky" }
+      ]
+    },
+    "education": {
+      "title": "Prax a vzdelanie",
+      "qualifications": [
+        "Atestácia I. stupňa v odbore Interná medicína",
+        "Atestácia II.stupňa v odbore Imunológia a alergológia"
+      ],
+      "licenses": "Člen Slovenskej lekárskej komory Člen združenia neštátnych ambulantných lekárov Zdravita"
+    },
+    "logos": [
+      { "src": "/assets/images/dovera.png", "alt": "Dôvera" },
+      { "src": "/assets/images/union.png", "alt": "Union" },
+      { "src": "/assets/images/vszp.png", "alt": "VšZP" },
+      { "src": "/assets/images/european-union-logo.png", "alt": "Európska únia" }
+    ]
+  }
+  

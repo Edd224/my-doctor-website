@@ -1,0 +1,74 @@
+{
+    "menu": [
+      {
+        "title": "Domov",
+        "link": "/"
+      },
+      {
+        "title": "O ambulancii",
+        "link": "/about"
+      },
+      {
+        "title": "Vyšetrenia",
+        "submenu": [
+          {
+            "title": "Prvé vyšetrenie",
+            "link": "/services/first"
+          },
+          {
+            "title": "Kontrolné vyšetrenie",
+            "link": "/services/control"
+          },
+          {
+            "title": "Testovanie",
+            "link": "/services/testing"
+          }
+        ]
+      },
+      {
+        "title": "Objednanie",
+        "submenu": [
+          {
+            "title": "Objednanie",
+            "link": "/appointment"
+          },
+          {
+            "title": "MEDIKARTA portál",
+            "link": "/medikarta"
+          }
+        ]
+      },
+      {
+        "title": "Časté otázky",
+        "link": "/faq"
+      },
+      {
+        "title": "Pre Vás",
+        "submenu": [
+          { "title": "Kategorizácia liečiv", "link": "/pre-vas/kategorizacia-lieciv" },
+          { "title": "Návod IMUNOR", "link": "/pre-vas/navod-imunor" },
+          { "title": "Video inhalačná technika", "link": "/pre-vas/video-inhalacna-technika" },
+          { "title": "Čo je alergia...", "link": "/pre-vas/co-je-alergia" },
+          { "title": "Anafylaxia", "link": "/pre-vas/anafy-laxia" },
+          { "title": "Epipen, JEXT - video návod", "link": "/pre-vas/epipen-jext" },
+          { "title": "Atopický ekzém", "link": "/pre-vas/atopicky-ekzem" },
+          { "title": "Režim a opatrenia pri alergii", "link": "/pre-vas/rezim-a-opatrenia" },
+          { "title": "Opatrenia proti roztočom", "link": "/pre-vas/opatrenia-proti-roztocom" },
+          { "title": "Alergény", "link": "/pre-vas/alergeny" },
+          { "title": "Potravinové alergény", "link": "/pre-vas/potravinove-alergeny" },
+          { "title": "Vonkajšie alergény", "link": "/pre-vas/vonkajsie-alergeny" },
+          { "title": "Vnútorné alergény", "link": "/pre-vas/vnutorne-alergeny" },
+          { "title": "Roztoče", "link": "/pre-vas/roztoce" },
+          { "title": "Kontaktné alergény", "link": "/pre-vas/kontaktne-alergeny" },
+          { "title": "Monitorovanie sezóny", "link": "/pre-vas/monitorovanie-sezony" },
+          { "title": "Astma", "link": "/pre-vas/astma" },
+          { "title": "Histamínová intolerancia", "link": "/pre-vas/histaminova-intolerancia" },
+          { "title": "Alergénová imunoterapia", "link": "/pre-vas/alergenova-imunoterapia" }
+        ]
+      },
+      {
+        "title": "Kontakt",
+        "link": "/contact"
+      }
+    ]
+  }
