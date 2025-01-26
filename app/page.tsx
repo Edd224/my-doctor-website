@@ -3,10 +3,10 @@ import Link from "next/link";
 const Home: React.FC = () => {
   return (
     <section
-      className="relative h-[600px] 2xl:h-[800px] flex items-center justify-start px-8 bg-[url('/assets/images/pexels-karolina-grabowska-4226769.jpg')] bg-cover bg-center bg-no-repeat rounded-20"
+      className="relative h-[600px] 2xl:h-[800px] flex items-center justify-start px-8 bg-[url('/logo.svg')] bg-cover bg-center bg-no-repeat rounded-20"
     >
       {/* Pre rozmazanie pozadia pridáme vrstvený efekt */}
-      <div className="absolute inset-0 bg-teal-400/10 backdrop-blur-sm rounded-20"></div>
+      {/* <div className="absolute inset-0 bg-teal-400/10 backdrop-blur-sm rounded-20"></div> */}
 
       {/* Obsah stránky */}
       <div className="relative text-left  text-text shadow-xl backdrop-blur-md p-8 rounded-10 w-full sm:w-2/3">
