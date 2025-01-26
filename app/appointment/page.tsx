@@ -56,6 +56,7 @@ const Appointment: FC = () => {
       <div className="container mx-auto p-4 sm:p-8">
         <motion.h1
           className="text-2xl sm:text-3xl md:text-4xl font-black text-center text-white pb-4"
+
           variants={fadeInUp()}
         >
           {data.title}
@@ -63,6 +64,7 @@ const Appointment: FC = () => {
         <motion.div
           className="w-full bg-white text-text p-6 sm:p-8 rounded-10 shadow-2xl"
           variants={fadeInUp(0.2)}
+
         >
           <div className="flex flex-col justify-center items-center pb-8">
             <motion.div

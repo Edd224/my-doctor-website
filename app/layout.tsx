@@ -44,6 +44,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sk">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className={urbanist.className}>
         <div className="min-h-screen flex flex-col">
           <TopBar />

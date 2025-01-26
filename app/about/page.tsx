@@ -4,6 +4,7 @@ import { FC } from "react";
 import { Car, MagnifyingGlass, Timer, Wheelchair } from "@phosphor-icons/react";
 import Image from "next/image";
 import AboutData from "../../public/data/AboutData.json";
+import { motion } from "framer-motion"; // Importujeme Framer Motion
 
 const About: FC = () => {
   const {
@@ -31,13 +32,24 @@ const About: FC = () => {
   return (
     <section className="rounded-20">
       <div className="container mx-auto bg-gradient-to-b from-teal-700 to-teal-400 p-6 sm:p-8 rounded-20">
-        <h1 className="text-[50px] font-black text-center text-white pb-8">
+        {/* Animujeme nadpis sekcie */}
+        <motion.h1
+          className="text-[50px] font-black text-center text-white pb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           {sectionTitle}
-        </h1>
+        </motion.h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Ordinačné hodiny */}
-          <div className="flex flex-col items-center justify-center bg-white rounded-10 p-8 shadow-2xl">
+          <motion.div
+            className="flex flex-col items-center justify-center bg-white rounded-10 p-8 shadow-2xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
             <h2 className="text-2xl font-semibold text-text mb-4">
               {openingHours.title}
             </h2>
@@ -62,20 +74,30 @@ const About: FC = () => {
                 <MagnifyingGlass size={32} />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Informácie */}
-          <div className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl">
+          <motion.div
+            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
             <div className="text-text font-semibold space-y-3">
               <h2 className="text-2xl font-semibold">{information.title}</h2>
               {information.details.map((detail, index) => (
                 <p key={index}>{detail}</p>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Doplnkové informácie */}
-          <div className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl">
+          <motion.div
+            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+          >
             <div className="text-text font-semibold text-xl space-y-3 sm:space-y-6">
               <h2 className="text-2xl font-semibold">{additionalInfo.title}</h2>
               <div className="p-6 sm:p-0 text-base sm:text-xl">
@@ -95,10 +117,15 @@ const About: FC = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Prax a vzdelanie */}
-          <div className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl">
+          <motion.div
+            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div className="text-text font-semibold space-y-6">
               <h2 className="text-2xl font-semibold">{education.title}</h2>
               <div>
@@ -108,11 +135,16 @@ const About: FC = () => {
               </div>
               <p>{education.licenses}</p>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Logá */}
-        <div className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row sm:justify-evenly sm:items-center mt-10">
+        <motion.div
+          className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row sm:justify-evenly sm:items-center mt-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           {logos.map((logo, index) => (
             <Image
               key={index}
@@ -123,7 +155,7 @@ const About: FC = () => {
               className="hover:scale-105 duration-200 w-24 sm:w-36"
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

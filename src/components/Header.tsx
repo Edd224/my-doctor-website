@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import menuData from "../../public/data/menu.json"; // Import JSON dát
 import { FaBars, FaTimes } from "react-icons/fa";
-import { CaretUp } from "@phosphor-icons/react" // Ikony pre hamburger menu
+import { CaretUp } from "@phosphor-icons/react"
+import Logo from "../../public/logo.svg"
 
 const Header: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -28,11 +30,21 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-teal-700 to-teal-400 text-white py-4 shadow-md z-20">
+    <header className="bg-gradient-to-r from-teal-700 to-teal-400 text-white py-4 shadow-md z-20"
+    >
       <div className="container mx-auto flex justify-between items-center">
-        <div className="div">
-          <h1 className="text-xl text-nowrap font-bold">MUDr. Marína Hantáková</h1>
-          <span className="italic">klinická imunológia a alergológia</span>
+        <div className="flex space-x-2">
+          <Image
+            src={Logo}
+            alt="test"
+            width={70}
+            height={50}
+            className=""
+          />
+          <div className="div">
+            <h1 className="text-xl text-nowrap font-bold">MUDr. Marína Hantáková</h1>
+            <span className="italic text-xs">klinická imunológia a alergológia</span>
+          </div>
         </div>
 
         {/* Hamburger menu pre mobil */}
@@ -45,7 +57,7 @@ const Header: React.FC = () => {
 
         {/* Desktop verzia */}
         <nav className="hidden md:flex space-x-6">
-          <ul className="flex items-center space-x-6">
+          <ul className="flex items-center space-x-2">
             {/* Dynamické vykresľovanie menu z JSON */}
             {menuData.menu.map((menuItem) => (
               <li
@@ -60,8 +72,8 @@ const Header: React.FC = () => {
                       {menuItem.title}
                       <span
                         className={`ml-2 transition-transform duration-500 transform ${openDropdown === menuItem.title
-                            ? "rotate-180"
-                            : "rotate-0"
+                          ? "rotate-180"
+                          : "rotate-0"
                           }`}
                       >
                         <CaretUp size={15} />
@@ -126,8 +138,8 @@ const Header: React.FC = () => {
                         {menuItem.title}
                         <span
                           className={`ml-2 transition-transform duration-500 transform ${openDropdown === menuItem.title
-                              ? "rotate-180"
-                              : "rotate-0"
+                            ? "rotate-180"
+                            : "rotate-0"
                             }`}
                         >
                           <CaretUp size={20} />

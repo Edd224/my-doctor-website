@@ -29,9 +29,9 @@ const TopBar: React.FC = () => {
 
             {/* Linky na sociálne siete */}
             <div
-                className="flex items-center justify-center w-1/3 space-x-6 bg-gradient-to-l from-teal-400 to-teal-900 px-10 py-4"
+                className="flex items-center justify-center w-1/3 space-x-6 bg-gradient-to-l from-teal-200 to-teal-900 px-10 py-4"
                 style={{
-                    clipPath: "polygon(3% 0, 100% 0, 100% 100%, 0% 100%)",
+                    clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
             >        <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                     <svg
