@@ -23,13 +23,22 @@ const staggerContainer = {
   },
 };
 
+interface AppointmentData {
+  title: string;
+  orderingOptions: string[];
+  buttonLink: string;
+  buttonText: string;
+  imageSrc: string;
+  paragraphs: string[];
+}
+
 const Appointment: FC = () => {
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<AppointmentData | null>(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (): Promise<void> => {
       const response = await fetch("/data/AppointmentData.json");
-      const result = await response.json();
+      const result: AppointmentData = await response.json();
       setData(result);
     };
     fetchData();
@@ -64,7 +73,7 @@ const Appointment: FC = () => {
                 Objednať sa môžete:
               </h2>
               <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-                {data.orderingOptions.map((option: string, index: number) => (
+                {data.orderingOptions.map((option, index) => (
                   <li key={index} className="text-sm sm:text-base">
                     {option}
                   </li>
@@ -95,7 +104,7 @@ const Appointment: FC = () => {
               className="mt-8 text-sm sm:text-base leading-relaxed space-y-4"
               variants={fadeInUp(1.2)}
             >
-              {data.paragraphs.map((paragraph: string, index: number) => (
+              {data.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </motion.div>
