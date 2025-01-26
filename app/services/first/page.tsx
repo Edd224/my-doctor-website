@@ -6,20 +6,21 @@ import { motion } from "framer-motion";
 import data from "../../../public/data/FirstData.json"; // Importujeme dáta z JSON súboru
 
 
+interface WhatYouNeedItem {
+    title: string;
+    description: string;
+    items: string[];
+}
+
 interface FirstData {
     heading: string;
     importantNotice: string[];
     importantWarnings: string[];
-    whatYouNeed: {
-        title: string;
-        description: string;
-        items: string[];
-    }[];
+    whatYouNeed: WhatYouNeedItem[]; // Opravený typ
     warnings: string[];
     appointmentMethods: string[];
     firstExaminationTimes: Record<string, string[]>;
 }
-
 const First = () => {
     const [jsonData, setJsonData] = useState<FirstData | null>(null);
 
@@ -128,7 +129,7 @@ const First = () => {
                             </h2>
 
                             <div className="flex flex-col sm:flex-row">
-                                {jsonData.whatYouNeed.map((item: any, index: number) => (
+                                {jsonData.whatYouNeed.map((item: WhatYouNeedItem, index: number) => (
                                     <motion.div
                                         key={index}
                                         className="w-full text-text sm:w-1/2 bg-gradient-to-b from-teal-300/50 to-slate-100 space-y-4 p-4 sm:p-8 m-0 sm:m-2 flex flex-col justify-center items-center rounded-10 hover:scale-105 duration-500 shadow-md"
