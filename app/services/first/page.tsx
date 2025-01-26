@@ -5,8 +5,23 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import data from "../../../public/data/FirstData.json"; // Importujeme dáta z JSON súboru
 
+
+interface FirstData {
+    heading: string;
+    importantNotice: string[];
+    importantWarnings: string[];
+    whatYouNeed: {
+        title: string;
+        description: string;
+        items: string[];
+    }[];
+    warnings: string[];
+    appointmentMethods: string[];
+    firstExaminationTimes: Record<string, string[]>;
+}
+
 const First = () => {
-    const [jsonData, setJsonData] = useState<any>(null);
+    const [jsonData, setJsonData] = useState<FirstData | null>(null);
 
     useEffect(() => {
         // Načítame dáta z JSON súboru
