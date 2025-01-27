@@ -3,12 +3,14 @@ import puppeteer from 'puppeteer';
 
 export async function GET() {
     try {
-      const browser = await puppeteer.launch({ headless: true });
+      const browser = await puppeteer.launch({ headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'] 
+       });
       const page = await browser.newPage();
   
       const doctorUrl = 'https://www.ecasenka.sk/ordinacia/mudrmarinahantakova-lekar';
       await page.goto(doctorUrl, { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('#notice'); // Počkaj, kým sa objaví element s ID 'notice'
+      await page.waitForSelector('#notice' ,{ timeout: 3000}); // Počkaj, kým sa objaví element s ID 'notice'
         
       // Debug: Uloženie HTML stránky
       const html = await page.content();
