@@ -5,7 +5,6 @@ import Image from "next/image"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import menuData from "../../public/data/menu.json"; // Import JSON dát
-import { FaBars, FaTimes } from "react-icons/fa";
 import { CaretUp, DotsThreeOutlineVertical, XCircle } from "@phosphor-icons/react"
 import Logo from "../../public/logo.svg"
 
