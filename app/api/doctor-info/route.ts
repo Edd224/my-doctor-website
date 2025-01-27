@@ -10,7 +10,7 @@ export async function GET() {
   
       const doctorUrl = 'https://www.ecasenka.sk/ordinacia/mudrmarinahantakova-lekar';
       await page.goto(doctorUrl, { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('#notice' ,{ timeout: 3000}); // Počkaj, kým sa objaví element s ID 'notice'
+      await page.waitForSelector('#notice' ,{ timeout: 10000}); // Počkaj, kým sa objaví element s ID 'notice'
         
       // Debug: Uloženie HTML stránky
       const html = await page.content();
