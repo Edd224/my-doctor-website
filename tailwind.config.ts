@@ -10,8 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#4b9b6e", 
-        secondary: "#4b5563",
+        primary: "#006d6b", 
+        secondary: "#92c8c2",
         text: "#254d36",
       },
       borderRadius: {

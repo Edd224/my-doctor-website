@@ -60,9 +60,9 @@ const About: FC = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-4 text-text">
+            <div className="flex flex-col items-center mt-4 text-text">
               <p>{openingHours.address}</p>
-              <div className="flex items-center cursor-pointer space-x-2">
+              <div className="flex items-center cursor-pointer space-x-2 text-white px-4 py-2 rounded-10 bg-gradient-to-br from-primary to-secondary shadow focus:outline-none focus:ring focus:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]">
                 <a
                   href={openingHours.mapLink}
                   rel="noopener"
@@ -71,7 +71,7 @@ const About: FC = () => {
                 >
                   Zobraziť na mape
                 </a>
-                <MagnifyingGlass size={32} />
+                <MagnifyingGlass size={32} className="animate-pulse" />
               </div>
             </div>
           </motion.div>

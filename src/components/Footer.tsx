@@ -2,7 +2,7 @@
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-auto"> {/* mt-auto zabezpečí, že footer bude na spodku */}
+    <footer className="bg-primary text-white py-6 mt-auto"> {/* mt-auto zabezpečí, že footer bude na spodku */}
       <div className="container mx-auto text-center md:flex md:justify-between md:items-center px-4">
         <p className="text-sm">
           © {new Date().getFullYear()} Alergológ. Všetky práva vyhradené.

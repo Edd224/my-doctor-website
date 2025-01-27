@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import menuData from "../../public/data/menu.json"; // Import JSON dát
 import { FaBars, FaTimes } from "react-icons/fa";
-import { CaretUp } from "@phosphor-icons/react"
+import { CaretUp, DotsThreeOutlineVertical, XCircle } from "@phosphor-icons/react"
 import Logo from "../../public/logo.svg"
 
 const Header: React.FC = () => {
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-teal-700 to-teal-400 text-white py-4 shadow-md z-20"
+    <header className="bg-white text-black py-3 shadow-md z-20"
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex space-x-2">
@@ -49,10 +49,10 @@ const Header: React.FC = () => {
 
         {/* Hamburger menu pre mobil */}
         <button
-          className="md:hidden text-white text-2xl focus:outline-none"
+          className="md:hidden text-black z-50 text-2xl focus:outline-none"
           onClick={toggleMobileMenu}
         >
-          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+          {isMobileMenuOpen ? <XCircle size={32} /> : <DotsThreeOutlineVertical size={30} />}
         </button>
 
         {/* Desktop verzia */}

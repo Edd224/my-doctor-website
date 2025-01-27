@@ -1,9 +1,45 @@
-"use client";
+'use client';
 
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+// Definícia typu pre dáta
+interface ContactInfo {
+  contactInfo: {
+    clinicName: string;
+    doctorName: string;
+    address: string;
+    phone: string;
+    email: string;
+    location: string;
+  };
+  clinicDescription: {
+    whereToFind: string;
+    floorDescription: string;
+  };
+}
+
 const Contact: FC = () => {
+  const [contactData, setContactData] = useState<ContactInfo | null>(null);
+
+  useEffect(() => {
+    const fetchContactData = async () => {
+      try {
+        const response = await fetch('/data/contact.json');
+        const data = await response.json();
+        setContactData(data);
+      } catch (error) {
+        console.error('Error loading contact data', error);
+      }
+    };
+
+    fetchContactData();
+  }, []);
+
+  // Kontrola, či sú dáta načítané
+  if (!contactData) {
+    return <div>Načítavam údaje...</div>;
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -38,22 +74,22 @@ const Contact: FC = () => {
             <div className="space-y-5">
               <h2 className="text-2xl font-bold text-text">Kontaktné údaje</h2>
               <p className="text-base leading-relaxed">
-                <strong>Ambulancia klinickej imunológie a alergológie</strong>
+                <strong>{contactData.contactInfo.clinicName}</strong>
               </p>
             </div>
-            <div className="">
-              <p className="">MUDr. Andrej Zlatoš</p>
-              <p className="">Adresa: Mestská poliklinika, Starohájska 2, Trnava</p>
-              <p className="">
+            <div>
+              <p>{contactData.contactInfo.doctorName}</p>
+              <p>{contactData.contactInfo.address}</p>
+              <p>
                 Telefón:{" "}
-                <a href="tel:+421335953414" className="text-text hover:underline">
-                  +421 335 953 414
+                <a href={`tel:${contactData.contactInfo.phone}`} className="text-text hover:underline">
+                  {contactData.contactInfo.phone}
                 </a>
               </p>
-              <p className="">
+              <p>
                 E-mail:{" "}
-                <a href="mailto:ambulancia@zlatos.sk" className="text-text hover:underline">
-                  ambulancia@zlatos.sk
+                <a href={`mailto:${contactData.contactInfo.email}`} className="text-text hover:underline">
+                  {contactData.contactInfo.email}
                 </a>
               </p>
             </div>
@@ -70,17 +106,10 @@ const Contact: FC = () => {
           >
             <h2 className="text-2xl font-bold text-text mb-4">Kde nás nájdete</h2>
             <p className="text-base leading-relaxed">
-              Ambulancia sa nachádza v detskom pavilóne Mestskej polikliniky na sídlisku Družba v
-              Trnave. Dostupnosť je buď priamo z ulice pod lávkou pre peších alebo z lávky, kedy
-              musíte zísť o jedno podlažie nadol.
+              {contactData.clinicDescription.whereToFind}
             </p>
-            <p className="mt-4">
-              Naše podlažie je značené ako suterén, hoci je nadzemné, ale ako prízemie je
-              označované podlažie na úrovni lávky pre peších.
-            </p>
-            <p className="mt-4 font-bold">Mestská poliklinika</p>
-            <p>Starohájska 2</p>
-            <p>TRNAVA</p>
+            <p className="mt-4">{contactData.clinicDescription.floorDescription}</p>
+            <p className="mt-4 font-bold">{contactData.contactInfo.location}</p>
           </motion.div>
         </div>
 
@@ -93,7 +122,7 @@ const Contact: FC = () => {
           className="mt-12"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.318237004553!2d17.583194415709436!3d48.37700797924681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476cfa45a874b22b%3A0x2f030a74c7c8e7a0!2sMestsk%C3%A1%20poliklinika%2C%20Staroh%C3%A1jska%202%2C%20Trnava!5e0!3m2!1sen!2ssk!4v1614682118278!5m2!1sen!2ssk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317154.92544574683!2d17.58645943998272!3d48.9961922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47149a0b3becfa97%3A0x33bc9f0b295f53a0!2s%C4%BD.+%C5%A0t%C3%BAra%2C%20019%2001%20Ilava!5e0!3m2!1sen!2ssk!4v1673922018278!5m2!1sen!2ssk"
             width="100%"
             height="400"
             style={{ border: 0, borderRadius: 10 }}

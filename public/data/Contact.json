@@ -1,0 +1,16 @@
+
+{
+    "contactInfo": {
+      "clinicName": "Klinická imunológia a alergológia",
+      "doctorName": "MUDr. Marína Hantáková",
+      "address": "Ľ. Štúra 1920, 01901 Ilava",
+      "phone": "0918 243 490",
+      "email": "mhantakova@gmail.com",
+      "location": "Ľ. Štúra 1920, 01901 Ilava"
+    },
+    "clinicDescription": {
+      "whereToFind": "Ambulancia sa nachádza v detskom pavilóne Mestskej polikliniky na sídlisku Družba v Trnave. Dostupnosť je buď priamo z ulice pod lávkou pre peších alebo z lávky, kedy musíte zísť o jedno podlažie nadol.",
+      "floorDescription": "Naše podlažie je značené ako suterén, hoci je nadzemné, ale ako prízemie je označované podlažie na úrovni lávky pre peších."
+    }
+  }
+  

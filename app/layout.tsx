@@ -48,7 +48,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={urbanist.className}>
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-gradient-to-bl from-primary to-secondary">
           <TopBar />
           <Header /> {/* Navigácia sa zobrazí na všetkých stránkach */}
           <main className="container flex-1 py-10">{children}</main> {/* Tento blok teraz vyplní všetok dostupný priestor */}
