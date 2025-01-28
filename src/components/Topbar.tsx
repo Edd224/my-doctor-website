@@ -9,12 +9,12 @@ const TopBar: React.FC = () => {
         <div className="w-full h-[50px] items-center justify-between hidden md:flex">
             {/* Kontaktné informácie */}
             <div className="flex items-center text-white justify-end w-2/3 pr-3 space-x-8 text-sm">
-                <div className="flex items-center space-x-2">
+                {/* <div className="flex items-center space-x-2">
                     <EnvelopeIcon className="h-5 w-5" />
                     <a href="mailto:info@ambulancia.sk" className="underline hover:text-black">
                         info@ambulancia.sk
                     </a>
-                </div>
+                </div> */}
                 <div className="flex items-center space-x-2">
                     <MapPinIcon className="h-5 w-5" />
                     <p>Hviezdoslavova 10, Bratislava</p>

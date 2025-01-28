@@ -16,8 +16,6 @@ const About: FC = () => {
     logos,
   } = AboutData;
 
-  
-
   const getIconComponent = (icon: string) => {
     switch (icon) {
       case "Car":
@@ -30,9 +28,6 @@ const About: FC = () => {
         return null;
     }
   };
-
-
-  
 
   return (
     <section className="rounded-20">
@@ -146,7 +141,7 @@ const About: FC = () => {
         {/* Logá */}
         <div className="overflow-hidden mt-10">
           <motion.div
-            className="flex space-x-20"
+            className="flex space-x-8 sm:space-x-20"
             initial={{ x: "100%" }}
             animate={{ x: "-100%" }}
             transition={{
