@@ -17,12 +17,12 @@ const TopBar: React.FC = () => {
                 </div> */}
                 <div className="flex items-center space-x-2">
                     <MapPinIcon className="h-5 w-5" />
-                    <p>Hviezdoslavova 10, Bratislava</p>
+                    <p>Ľ. Štúra 1920, 01901 Ilava</p>
                 </div>
                 <div className="flex items-center space-x-2">
                     <PhoneIcon className="h-5 w-5" />
                     <a href="tel:+421912345678" className="underline hover:text-black">
-                        +421 912 345 678
+                    +421 918 243 490
                     </a>
                 </div>
             </div>

@@ -115,13 +115,13 @@ const Header: React.FC = () => {
         {/* Mobilné menu */}
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-teal-700 text-white flex flex-col items-center justify-center z-30"
+            className="fixed inset-0 bg-gradient-to-tr from-primary to-secondary text-white flex flex-col items-center justify-center z-30"
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5 }}
           >
-            <ul className="space-y-6 text-">
+            <ul className="space-y-6">
               {menuData.menu.map((menuItem) => (
                 <li key={menuItem.title} className="relative items-center justify-start ">
                   {menuItem.submenu ? (
