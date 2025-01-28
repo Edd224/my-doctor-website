@@ -1,7 +1,6 @@
 "use client";
 
 import { FC } from "react";
-import { useEffect, useState } from "react";
 import { Car, MagnifyingGlass, Timer, Wheelchair } from "@phosphor-icons/react";
 import Image from "next/image";
 import AboutData from "../../public/data/AboutData.json";
