@@ -38,11 +38,11 @@ const Header: React.FC = () => {
             alt="test"
             width={70}
             height={50}
-            className=""
+            className="w-[40px] sm:w-[70px]"
           />
           <div className="div">
-            <h1 className="text-xl text-nowrap font-bold">MUDr. Marína Hantáková</h1>
-            <span className="italic text-xs">klinická imunológia a alergológia</span>
+            <h1 className="text-base sm:text-xl text-nowrap font-bold">MUDr. Marína Hantáková</h1>
+            <span className="italic text-xs sm:text-xs">klinická imunológia a alergológia</span>
           </div>
         </div>
 

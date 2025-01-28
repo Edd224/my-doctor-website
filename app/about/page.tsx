@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import { useEffect, useState } from "react";
 import { Car, MagnifyingGlass, Timer, Wheelchair } from "@phosphor-icons/react";
 import Image from "next/image";
 import AboutData from "../../public/data/AboutData.json";
@@ -16,6 +17,8 @@ const About: FC = () => {
     logos,
   } = AboutData;
 
+  
+
   const getIconComponent = (icon: string) => {
     switch (icon) {
       case "Car":
@@ -28,6 +31,9 @@ const About: FC = () => {
         return null;
     }
   };
+
+
+  
 
   return (
     <section className="rounded-20">
@@ -139,23 +145,62 @@ const About: FC = () => {
         </div>
 
         {/* Logá */}
-        <motion.div
-          className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-row sm:justify-evenly sm:items-center mt-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-        >
-          {logos.map((logo, index) => (
-            <Image
-              key={index}
-              src={logo.src}
-              alt={logo.alt}
-              width={200}
-              height={50}
-              className="hover:scale-105 duration-200 w-24 sm:w-36"
-            />
-          ))}
-        </motion.div>
+        <div className="overflow-hidden mt-10">
+          <motion.div
+            className="flex space-x-20"
+            initial={{ x: "100%" }}
+            animate={{ x: "-100%" }}
+            transition={{
+              repeat: Infinity,
+              duration: 40,
+              ease: "linear",
+            }}
+          >
+            {logos.map((logo, index) => (
+              <Image
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {/* Opakujeme logá, aby bola ilúzia plynulá */}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+
+
+          </motion.div>
+        </div>
       </div>
     </section>
   );
