@@ -13,7 +13,7 @@ const urbanist = Urbanist({
 
 
 export const metadata: Metadata = {
-  title: "Alergológ - Profesionálne služby alergológa",
+  title: "Alergológ - MUDr. Marína Hantáková",
   description: "Ponúkame diagnostiku a liečbu alergií pre jednotlivcov a firmy.",
   keywords: "alergológ, alergie, diagnostika, liečba alergií, zdravie",
   openGraph: {

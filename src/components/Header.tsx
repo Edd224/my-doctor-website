@@ -55,8 +55,8 @@ const Header: React.FC = () => {
         </button>
 
         {/* Desktop verzia */}
-        <nav className="hidden md:flex space-x-6">
-          <ul className="flex items-center space-x-2">
+        <nav className="hidden md:flex space-x-">
+          <ul className="flex items-center space-x-">
             {/* Dynamické vykresľovanie menu z JSON */}
             {menuData.menu.map((menuItem) => (
               <li
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
               >
                 {menuItem.submenu ? (
                   <>
-                    <button className="flex items-center px-4 py-2 hover:scale-110">
+                    <button className="flex items-center px-3 py-2 hover:scale-110">
                       {menuItem.title}
                       <span
                         className={`ml-2 transition-transform duration-500 transform ${openDropdown === menuItem.title
