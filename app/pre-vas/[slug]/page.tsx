@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 
 type Article = {
   title: string;
@@ -9,18 +10,24 @@ type Article = {
 };
 
 const Article = () => {
-  const slug = typeof window !== "undefined" ? window.location.pathname.split("/").pop() : "";
+  const params = useParams();
+  const slug = params?.slug as string | undefined; // Získanie slug z URL
 
   const [article, setArticle] = useState<Article | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/data/Articles.json");
-      const data = await res.json();
-      if (slug) {
+      if (!slug) return; // Počkaj, kým sa slug načíta
+      
+      try {
+        const res = await fetch("/data/Articles.json");
+        const data = await res.json();
         setArticle(data[slug] || null);
+      } catch (error) {
+        console.error("Chyba pri načítaní článku:", error);
       }
     };
+
     fetchData();
   }, [slug]);
 

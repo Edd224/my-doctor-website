@@ -31,10 +31,67 @@ const About: FC = () => {
 
   return (
     <section className="rounded-20">
+
       <div className="container mx-auto bg-gradient-to-b from-teal-700 to-teal-400 p-6 sm:p-8 rounded-20">
+        {/* Logá */}
+        <div className="overflow-hidden"> 
+          <motion.div
+            className="flex space-x-8 sm:space-x-20"
+            initial={{ x: "100%" }}
+            animate={{ x: "-100%" }}
+            transition={{
+              repeat: Infinity,
+              duration: 40,
+              ease: "linear",
+            }}
+          >
+            {logos.map((logo, index) => (
+              <Image
+                key={index}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {/* Opakujeme logá, aby bola ilúzia plynulá */}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+            {logos.map((logo, index) => (
+              <Image
+                key={`${index}-duplicate`}
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={40}
+                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
+              />
+            ))}
+          </motion.div>
+        </div>
+
         {/* Animujeme nadpis sekcie */}
         <motion.h1
-          className="text-[50px] font-black text-center text-white pb-8"
+          className="text-[50px] font-black text-center text-white pb-8 z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -138,63 +195,6 @@ const About: FC = () => {
           </motion.div>
         </div>
 
-        {/* Logá */}
-        <div className="overflow-hidden mt-10">
-          <motion.div
-            className="flex space-x-8 sm:space-x-20"
-            initial={{ x: "100%" }}
-            animate={{ x: "-100%" }}
-            transition={{
-              repeat: Infinity,
-              duration: 40,
-              ease: "linear",
-            }}
-          >
-            {logos.map((logo, index) => (
-              <Image
-                key={index}
-                src={logo.src}
-                alt={logo.alt}
-                width={200}
-                height={40}
-                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
-              />
-            ))}
-            {/* Opakujeme logá, aby bola ilúzia plynulá */}
-            {logos.map((logo, index) => (
-              <Image
-                key={`${index}-duplicate`}
-                src={logo.src}
-                alt={logo.alt}
-                width={200}
-                height={40}
-                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
-              />
-            ))}
-            {logos.map((logo, index) => (
-              <Image
-                key={`${index}-duplicate`}
-                src={logo.src}
-                alt={logo.alt}
-                width={200}
-                height={40}
-                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
-              />
-            ))}
-            {logos.map((logo, index) => (
-              <Image
-                key={`${index}-duplicate`}
-                src={logo.src}
-                alt={logo.alt}
-                width={200}
-                height={40}
-                className="hover:scale-105 duration-200 w-24 sm:w-36 h-[30px] sm:h-[50px]"
-              />
-            ))}
-
-
-          </motion.div>
-        </div>
       </div>
     </section>
   );
