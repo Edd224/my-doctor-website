@@ -62,7 +62,7 @@ const First = () => {
 
     return (
         <motion.div
-            className="bg-gradient-to-bl from-teal-700 to-teal-400 rounded-20"
+            className="bg-gradient-to-bl from-main rounded-20"
             initial="hidden"
             animate="visible"
             variants={containerVariants}
@@ -132,7 +132,7 @@ const First = () => {
                                 {jsonData.whatYouNeed.map((item: WhatYouNeedItem, index: number) => (
                                     <motion.div
                                         key={index}
-                                        className="w-full text-text sm:w-1/2 bg-gradient-to-b from-teal-300/50 to-slate-100 space-y-4 p-4 sm:p-8 m-0 sm:m-2 flex flex-col justify-center items-center rounded-10 hover:scale-105 duration-500 shadow-md"
+                                        className="w-full text-text sm:w-1/2 bg-gradient-to-b from-main/40 to-primary space-y-4 p-4 sm:p-8 m-0 sm:m-2 flex flex-col justify-center items-center rounded-10 hover:scale-105 duration-500 shadow-md"
                                         variants={containerVariants}
                                         custom={index + 3}
                                     >
@@ -184,14 +184,14 @@ const First = () => {
 
                                 <div className="flex flex-col sm:flex-row">
                                     <motion.div
-                                        className="w-full sm:w-1/2 flex flex-col justify-around items-start space-y-4 m-0 sm:m-2 p-8 bg-gradient-to-b from-teal-300/50 to-slate-100 rounded-10 hover:scale-105 duration-500 shadow-lg"
+                                        className="w-full flex flex-col justify-around items-center space-y-4 m-0 sm:m-2 p-8 bg-gradient-to-l from-main/40 to-primary rounded-10 hover:scale-105 duration-500 shadow-lg"
                                         variants={containerVariants}
                                         custom={10}
                                     >
                                         <h3 className="text-xl font-semibold mt-4 text-text">
                                             Spôsoby objednania:
                                         </h3>
-                                        <ul className="list-disc pl-6 mb-4">
+                                        <ul className="list-disc pl-6 mb-4 space-y-3">
                                             {jsonData.appointmentMethods.map((method: string, index: number) => (
                                                 <motion.li variants={listItemVariants} key={index}>
                                                     {method}
@@ -201,7 +201,7 @@ const First = () => {
                                     </motion.div>
 
                                     {/* Termíny pre prvé vyšetrenie */}
-                                    <motion.div
+                                    {/* <motion.div
                                         className="w-full sm:w-1/2 flex flex-col justify-around items-start space-y-4 m-0 sm:m-2 p-8 bg-gradient-to-b from-teal-300/50 to-slate-100 rounded-10 hover:scale-105 duration-500 shadow-lg"
                                         variants={containerVariants}
                                         custom={11}
@@ -216,7 +216,7 @@ const First = () => {
                                                 </motion.li>
                                             ))}
                                         </ul>
-                                    </motion.div>
+                                    </motion.div> */}
                                 </div>
                             </div>
                         </motion.div>

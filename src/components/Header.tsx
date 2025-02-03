@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                           <li key={index}>
                             <Link
                               href={submenuItem.link}
-                              className="block px-4 py-2 hover:text-white hover:bg-gradient-to-r from-teal-700 to-teal-400 shadow focus:outline-none focus:ring-4 focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
+                              className="block px-4 py-2 hover:text-white hover:bg-gradient-to-r from-text to-main shadow focus:outline-none focus:ring-4 focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
                             >
                               {submenuItem.title}
                             </Link>
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
         {/* Mobilné menu */}
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-gradient-to-tr from-primary to-secondary text-white flex flex-col items-center justify-center z-30"
+            className="fixed inset-0 bg-gradient-to-tr from-main to-secondary text-text flex flex-col items-center justify-center z-30"
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
@@ -146,7 +146,7 @@ const Header: React.FC = () => {
                       </button>
                       {openDropdown === menuItem.title && (
                         <motion.ul
-                          className="mt-2 bg-white text-black rounded-md"
+                          className="mt-2 bg-white text-text rounded-md"
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}

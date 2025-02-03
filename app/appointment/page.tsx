@@ -48,7 +48,7 @@ const Appointment: FC = () => {
 
   return (
     <motion.section
-      className="bg-gradient-to-b from-teal-700 to-teal-400 rounded-20"
+      className="bg-gradient-to-b from-main rounded-20"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}
@@ -90,7 +90,7 @@ const Appointment: FC = () => {
                 href={data.buttonLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-10 py-4 px-10 text-lg font-medium text-white bg-gradient-to-r from-teal-700 to-teal-400 shadow focus:outline-none focus:ring focus:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
+                className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-10 py-4 px-10 text-lg font-medium text-white bg-gradient-to-tl from-main to-secondary shadow focus:outline-none focus:ring focus:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
               >
               <Image
                 src={data.imageSrc}

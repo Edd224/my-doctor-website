@@ -19,7 +19,7 @@ const Testing = () => {
 
   return (
     <motion.div
-      className="bg-gradient-to-bl from-teal-700 to-teal-400 rounded-20"
+      className="bg-gradient-to-bl from-main to-teal- rounded-20"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -46,7 +46,7 @@ const Testing = () => {
 
           {/* Sekcia 4: Obrázky */}
           <motion.div
-            className="flex flex-col sm:grid sm:grid-cols-2 gap-4"
+            className="flex flex-col "
             variants={containerVariants}
             custom={4}
           >
@@ -55,8 +55,8 @@ const Testing = () => {
                 key={index}
                 src={imageSrc}
                 alt="test"
-                width={300}
-                height={200}
+                width={400}
+                height={300}
                 className="rounded-lg shadow-md"
               />
             ))}

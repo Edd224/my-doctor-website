@@ -51,7 +51,7 @@ const Contact: FC = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-teal-700 to-teal-400 py-12 rounded-20">
+    <section className="bg-gradient-to-b from-main py-12 rounded-20">
       <div className="container mx-auto px-6 md:px-12">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
@@ -69,7 +69,7 @@ const Contact: FC = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={containerVariants}
-            className="bg-white text-black p-8 space-y-4 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
+            className="bg-white text-text p-8 space-y-4 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
           >
             <div className="space-y-5">
               <h2 className="text-2xl font-bold text-text">Kontaktné údaje</h2>
@@ -102,7 +102,7 @@ const Contact: FC = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={containerVariants}
-            className="bg-white text-black p-8 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
+            className="bg-white text-text p-8 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
           >
             <h2 className="text-2xl font-bold text-text mb-4">Kde nás nájdete</h2>
             <p className="text-base leading-relaxed">

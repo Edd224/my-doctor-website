@@ -36,9 +36,9 @@ const Article = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-primary rounded-10">
+    <div className="max-w-4xl mx-auto p-8 bg-primary rounded-10 text-text">
       <h1 className="text-3xl font-bold mb-4">{article.title}</h1>
-      <p className="text-white">{article.content}</p>
+      <p className="">{article.content}</p>
       {article.video && (
         <div className="mt-4">
           <iframe

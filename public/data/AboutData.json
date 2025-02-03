@@ -15,18 +15,15 @@
     "information": {
       "title": "Informácie",
       "details": [
-        "Vyšetrujeme len dospelých pacientov",
         "Poradie pacientov prichádzajúcich na injekciu určujeme my, bez poradového čísla",
         "Telefóny vybavujeme po 13.00 hod.",
         "Pacienta s č.4 prosíme prísť na 8,15 hod., na hodinu potom pripadajú orientačne 4 pacienti",
-        "Noví pacienti - rezervácia len telefonicky po 12:00hod."
+        "Noví pacienti - rezervácia len osobne alebo telefonicky po 12:00hod."
       ]
     },
     "additionalInfo": {
       "title": "Doplnkové informácie",
       "details": [
-        "Bývalá hematológia - vľavo pri vstupe do nemocnice",
-        "Autobusová doprava: zastávka Ilava - nemocnica"
       ],
       "features": [
         { "icon": "Car", "label": "Parkovanie" },

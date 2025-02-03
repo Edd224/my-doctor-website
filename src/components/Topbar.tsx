@@ -8,7 +8,7 @@ const TopBar: React.FC = () => {
     return (
         <div className="w-full h-[50px] items-center justify-between hidden md:flex">
             {/* Kontaktné informácie */}
-            <div className="flex items-center text-white justify-end w-2/3 pr-3 space-x-8 text-sm">
+            <div className="flex items-center text-text justify-end w-2/3 pr-3 space-x-8 text-sm">
                 {/* <div className="flex items-center space-x-2">
                     <EnvelopeIcon className="h-5 w-5" />
                     <a href="mailto:info@ambulancia.sk" className="underline hover:text-black">
@@ -29,7 +29,7 @@ const TopBar: React.FC = () => {
 
             {/* Linky na sociálne siete */}
             <div
-                className="flex items-center justify-center w-1/3 space-x-6 bg-gradient-to-l from-primary to-secondary px-10 py-4"
+                className="flex items-center justify-center w-1/3 space-x-6 bg-gradient-to-l from-main to-secondary px-10 py-4"
                 style={{
                     clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}

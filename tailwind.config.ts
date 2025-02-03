@@ -10,9 +10,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#006d6b", 
-        secondary: "#92c8c2",
-        text: "#254d36",
+        main: "#26c6da",
+        primary: "#4dd0e1", 
+        secondary: "#b2ebf2",
+        text: "#082a2e",
       },
       borderRadius: {
         '20': '20px', 

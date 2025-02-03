@@ -86,9 +86,9 @@ const Home: React.FC = () => {
           <p>Do čistého ordinačného času sa nezapočítava čas ordinačných hodín vyhradených na odbery, vyhodnocovanie výsledkov bez prítomnosti pacienta, admnistratívu a konziliárne vyšetrenia.</p>
         </div>
         <div className="mt-2">
-        <h3 className='text-text'>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h3>
-        <h4 className='text-text'>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
-      </div>
+          <h3 className='text-text'>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h3>
+          <h4 className='text-text'>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
+        </div>
 
       </div>
     </section>

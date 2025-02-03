@@ -1,8 +1,4 @@
 {
-  "kategorizacia-lieciv": {
-    "title": "Kategorizácia liečiv",
-    "content": "Lieky sú rozdelené do rôznych kategórií na základe ich účinkov a spôsobu použitia. Cieľom kategorizácie je zabezpečiť efektívnu liečbu pacientov."
-  },
   "navod-imunor": {
     "title": "Návod IMUNOR",
     "content": "IMUNOR je liek na podporu imunity. Tento návod obsahuje správne dávkovanie a odporúčania pre jeho užívanie."
@@ -12,14 +8,6 @@
     "content": "Správna inhalácia je dôležitá pre účinnosť liečby. Pozrite si video návod, ako správne používať inhalátor.",
     "video": "https://www.youtube.com/embed/ADwOtylK5qs"
   },
-  "co-je-alergia": {
-    "title": "Čo je alergia?",
-    "content": "Alergia je prehnaná reakcia imunitného systému na látky, ktoré sú bežne neškodné. Príkladom sú peľ, prach alebo niektoré potraviny."
-  },
-  "anafy-laxia": {
-    "title": "Anafylaxia",
-    "content": "Anafylaxia je život ohrozujúca alergická reakcia, ktorá si vyžaduje okamžitú lekársku pomoc."
-  },
   "epipen-jext": {
     "title": "Epipen, JEXT - video návod",
     "content": "Epipen a JEXT sú autoinjektory na podanie adrenalínu pri anafylaxii. Pozrite si video návod na ich použitie."
@@ -28,45 +16,13 @@
     "title": "Atopický ekzém",
     "content": "Atopický ekzém je chronické kožné ochorenie spôsobené genetickými a environmentálnymi faktormi. Prejavuje sa svrbením a suchou pokožkou."
   },
-  "rezim-a-opatrenia": {
-    "title": "Režim a opatrenia pri alergii",
-    "content": "Dodržiavanie správnych opatrení môže zmierniť príznaky alergie. Patrí sem obmedzenie kontaktu s alergénmi a vhodná liečba."
-  },
   "opatrenia-proti-roztocom": {
     "title": "Opatrenia proti roztočom",
     "content": "Roztoče sú jedným z najčastejších alergénov v domácnosti. Pomáha pravidelné vetranie, pranie posteľnej bielizne a použitie protiroztočových obliečok."
   },
-  "alergeny": {
-    "title": "Alergény",
-    "content": "Alergény sú látky, ktoré vyvolávajú alergickú reakciu. Delíme ich na potravinové, vnútorné a vonkajšie alergény."
-  },
-  "potravinove-alergeny": {
-    "title": "Potravinové alergény",
-    "content": "Medzi najčastejšie potravinové alergény patria orechy, mlieko, vajcia, pšenica a morské plody. Ich konzumácia môže vyvolať rôzne alergické reakcie."
-  },
-  "vonkajsie-alergeny": {
-    "title": "Vonkajšie alergény",
-    "content": "Medzi vonkajšie alergény patria peľ, plesne a znečistenie ovzdušia. Vyhýbanie sa expozícii môže zmierniť alergické príznaky."
-  },
-  "vnutorne-alergeny": {
-    "title": "Vnútorné alergény",
-    "content": "Vnútorné alergény zahŕňajú prach, roztoče a zvieraciu srsť. Zníženie kontaktu s nimi môže pomôcť pri alergii."
-  },
-  "roztoce": {
-    "title": "Roztoče",
-    "content": "Roztoče sú mikroskopické organizmy, ktoré sa nachádzajú v prachu a môžu spôsobovať alergické reakcie. Ich populáciu možno regulovať správnym upratovaním."
-  },
-  "kontaktne-alergeny": {
-    "title": "Kontaktné alergény",
-    "content": "Niektoré látky, ako sú kovy, latex alebo parfumy, môžu pri kontakte s pokožkou vyvolať alergickú reakciu."
-  },
   "monitorovanie-sezony": {
     "title": "Monitorovanie sezóny",
     "content": "Alergici by mali sledovať peľovú sezónu, aby sa mohli vyhnúť vysokým koncentráciám alergénov v ovzduší."
-  },
-  "astma": {
-    "title": "Astma",
-    "content": "Astma je chronické ochorenie dýchacích ciest, ktoré spôsobuje zápal a zúženie priedušiek. Pravidelná liečba môže pomôcť udržať príznaky pod kontrolou."
   },
   "histaminova-intolerancia": {
     "title": "Histamínová intolerancia",

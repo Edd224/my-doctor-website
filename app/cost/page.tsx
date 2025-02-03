@@ -2,40 +2,40 @@
 
 const Cost = () => {
     const services = [
-        { name: 'Potvrdenia pre administratívne účely na žiadosť poistenca', price: '30€' },
-        { name: 'Vyšetrenie hladiny FeNO', price: '50€' },
-        { name: 'Poplatok za nedodržanie a blokovanie dohodnutého termínu', price: '25€' },
-        { name: 'Vyšetrenie mimo ordinačného času - prvovyšetrenie', price: '25€' },
-        { name: 'Vyšetrenie mimo ordinačného času - kontrolné', price: '60€' },
-        { name: '* Ročný poplatok za sližby telefonickej a mailovej podpory', price: '60€' },
+        { name: 'Potvrdenia pre administratívne účely na žiadosť poistenca', price: '10€' },
+        { name: 'Vyšetrenie hladiny FeNO', price: '15€' },
+        { name: 'Poplatok za nedodržanie a blokovanie dohodnutého termínu', price: '5€' },
+        { name: 'Vyšetrenie mimo ordinačného času - prvovyšetrenie', price: '20€' },
+        { name: 'Vyšetrenie mimo ordinačného času - kontrolné', price: '10€' },
+        { name: '* Ročný poplatok za sližby telefonickej a mailovej podpory', price: '10€' },
     ];
 
     const servicesTwo = [
-        { name: 'Prvé kompletné vyšetrenie, zhodnotenie stavu a plán ďalších vyšetrení a liečby', price: '30€' },
-        { name: 'Kontrolné vyšetrenie', price: '50€', info: 'Kompletná diagnostika' },
-        { name: 'Prick testy - za každý vpich', price: '40€' },
-        { name: 'Krvné odbery - za každú skúmavku (indikované iným lekárom)', price: '25€' },
-        { name: 'Podanie injekcie (indikované iným lekárom)', price: '60€' },
-        { name: 'Podanie infúzie v trvaní 10 - 30 min.', price: '60€' },
-        { name: 'Spirometrické vyšetrenie základné', price: '60€' },
-        { name: 'Bronchodiatačný test', price: '60€' },
-        { name: 'Hodnotenie laboratórnych výledkov od iných lekárov', price: '60€' },
-        { name: 'Individuálna konzultácia ohľadom zdrav.stavu, nevyžadujúca vyšetrenie, za každých začatých 15 min.', price: '60€' },
-        { name: 'Výdychový expozičný test na vyšetrenie laktózovej intolerancie alebo SIBO syndrómu', price: '60€' },
-        { name: 'Opätovné vystavenie receptu (pri strate alebo vypršaní platnosti', price: '60€' },
+        { name: 'Prvé kompletné vyšetrenie, zhodnotenie stavu a plán ďalších vyšetrení a liečby', price: '50€' },
+        { name: 'Kontrolné vyšetrenie', price: '10€' },
+        { name: 'Prick testy - za každý vpich', price: '2€' },
+        { name: 'Krvné odbery - za každú skúmavku (indikované iným lekárom)', price: '3€' },
+        { name: 'Podanie injekcie (indikované iným lekárom)', price: '5€' },
+        { name: 'Podanie infúzie v trvaní 10 - 30 min.', price: '15€' },
+        { name: 'Spirometrické vyšetrenie základné', price: '12€' },
+        { name: 'Bronchodiatačný test', price: '20€' },
+        { name: 'Hodnotenie laboratórnych výledkov od iných lekárov', price: '8€' },
+        { name: 'Individuálna konzultácia ohľadom zdrav.stavu, nevyžadujúca vyšetrenie, za každých začatých 15 min.', price: '15€' },
+        { name: 'Výdychový expozičný test na vyšetrenie laktózovej intolerancie alebo SIBO syndrómu', price: '25€' },
+        { name: 'Opätovné vystavenie receptu (pri strate alebo vypršaní platnosti', price: '2€' },
 
     ];
 
 
     return (
         <section className="flex container flex-col items-center justify-center  text-text">
-            <span className="text-white text-center">Zoznam zdravotných výkonov a služieb, pri torých maožno požadovať úhradu</span>
-            <h2 className="text-2xl font-semibold mb-6 text-white text-center">Cenník poplatkov LEKIA s.r.o</h2>
+            <span className="text-text text-center">Zoznam zdravotných výkonov a služieb, pri torých maožno požadovať úhradu</span>
+            <h2 className="text-2xl font-semibold mb-6 text-text text-center">Cenník poplatkov LEKIA s.r.o</h2>
 
 
             <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 ">
                 <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
-                    <p className="text-center font-semibold text-sm sm:text-[16px] p-2  bg-primary text-white">Platnosť od 1.11.2021</p>
+                    <p className="text-center font-semibold text-sm sm:text-[16px] p-2  bg-primary text-white">Cenník poplatkov LEKIA s.r.o - platnosť od 1.11.2021</p>
                     <div className="px-4 sm:px-0">
                         <table className="w-full border-collapse">
                             <thead>

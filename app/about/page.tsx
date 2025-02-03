@@ -32,7 +32,7 @@ const About: FC = () => {
   return (
     <section className="rounded-20">
 
-      <div className="container mx-auto bg-gradient-to-b from-teal-700 to-teal-400 p-6 sm:p-8 rounded-20">
+      <div className="container mx-auto bg-gradient-to-b from-main p-6 sm:p-8 rounded-20">
         {/* Logá */}
         <div className="overflow-hidden"> 
           <motion.div
