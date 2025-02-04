@@ -1,25 +1,69 @@
 {
   "navod-imunor": {
     "title": "Návod IMUNOR",
-    "content": "IMUNOR je liek na podporu imunity. Tento návod obsahuje správne dávkovanie a odporúčania pre jeho užívanie."
+    "content": "IMUNOR je liek na podporu imunity. Tento návod obsahuje správne dávkovanie a odporúčania pre jeho užívanie.",
+    "videos": [
+      {
+        "title": "Návod na podávanie IMUNORU - video",
+        "url": "https://www.youtube.com/embed/Sbc1fW5DFZI"
+      }
+    ] 
+    
   },
   "video-inhalacna-technika": {
-    "title": "Video inhalačná technika",
-    "content": "Správna inhalácia je dôležitá pre účinnosť liečby. Pozrite si video návod, ako správne používať inhalátor.",
-    "video": "https://www.youtube.com/embed/ADwOtylK5qs"
+    "title": "Videá - inhalačná technika",
+    "content": "Vyberte podľa Vášho inhalačného systému .",
+    "videos": [
+      {
+        "title": "MDI Bez Chambra",
+        "url": "https://www.youtube.com/embed/K9Rv4llcb3c"
+      },
+      {
+        "title": "MDI Chamber bez masky",
+        "url": "https://www.youtube.com/embed/IgxOctb-1h4"
+      },
+      {
+        "title": "MDI Chamber a maska",
+        "url": "https://www.youtube.com/embed/WC_1dGvuCOw"
+      },
+      {
+        "title": "Video inhalačná technika  TURBUHALER (SYMBICORT, PLUMICORT)",
+        "url": "https://www.youtube.com/embed/tPBYBBBxNYA"
+      },
+      {
+        "title": "Video inhalačná technika  TWISTHALER ( ASMANEX )",
+        "url": "https://www.youtube.com/embed/NCI8u2DhiZY"
+      },
+      {
+        "title": "Video inhalačná technika  DISKUS",
+        "url": "https://www.youtube.com/embed/JIwSMETwVTI"
+      }
+    ] 
   },
   "epipen-jext": {
-    "title": "Epipen, JEXT - video návod",
-    "content": "Epipen a JEXT sú autoinjektory na podanie adrenalínu pri anafylaxii. Pozrite si video návod na ich použitie."
+    "title": "Edukačné videá k podávaniu adrenalínu v pere",
+    "content": "Epipen a JEXT sú autoinjektory na podanie adrenalínu pri anafylaxii. Pozrite si video návod na ich použitie.",
+    "videos": [
+      {
+        "title": "EpiPen+Adrenaline+Autoinjector",
+        "url": "https://www.youtube.com/embed/vZrsNqXSn4w"
+      },
+      {
+        "title": "Jext Pen",
+        "url": "https://www.youtube.com/embed/CjgbwmQy2r8"
+      }
+    ] 
+
   },
   "atopicky-ekzem": {
     "title": "Atopický ekzém",
-    "content": "Atopický ekzém je chronické kožné ochorenie spôsobené genetickými a environmentálnymi faktormi. Prejavuje sa svrbením a suchou pokožkou."
+    "content": "Atopický ekzém je jednou z najčastejších chorôb kože. Presná a jednoznačná príčina jeho vzniku doteraz nebola zistená. Vieme však, že je do značnej miery podmienený dedičnosťou a pri jeho vývoji sa uplatňujú predovšetkým dva faktory – porucha štruktúry kože a atopia. V koži pacientov s atopickým ekzémom je nedostatok niektorých tukových látok, ktoré sú dôležité pre udržiavanie ochrannej bariéry kože proti pôsobeniu látok z vonkajšieho prostredia. Ako atopia sa označuje geneticky podmienená predispozícia k vývoju precitlivenosti (alergie) na rôzne alergény vonkajšieho prostredia.<br></br> Ochorenie sa zvyčajne prejaví už v prvých mesiacoch života, ale prvé príznaky sa môžu objaviť v ktoromkoľvek veku, v dospelosti však vznikajú už len zriedkavo. Vo väčšine prípadov sa intenzita ťažkostí s vekom zmierňuje, po 15. roku života klinické prejavy u väčšiny pacientov ustupujú, môžu však pretrvať až do dospelosti. Priebeh atopickej dermatitídy je chronický, charakteristický striedaním období výrazných ťažkostí s obdobiami relatívneho pokoja, často však zapálené ložiská na koži pretrvávajú aj veľmi dlho. Lokalizácia ekzémových prejavov sa typicky mení s vekom. U dojčiat býva zápal prítomný najčastejšie na koži líc, u väčších detí postihuje najmä oblasti zhybov končatín (lakťové a podkolenné jamky) a u dospelých čelo, ruky a predkolenia."
   },
   "opatrenia-proti-roztocom": {
     "title": "Opatrenia proti roztočom",
-    "content": "Roztoče sú jedným z najčastejších alergénov v domácnosti. Pomáha pravidelné vetranie, pranie posteľnej bielizne a použitie protiroztočových obliečok."
+    "content": "<b>I.skupina</b> - nevyhnutné protiroztočové opatreniaPozornosť zamerajte v prvom rade na hlavný zdroj roztočov bytového prachu v byte - spálňu a lôžko.<li>Uzavrite matrace, prikrývky a vankúše do špeciálnych obliečok, ktoré sú nepriepustné pre roztoče i roztočové alergény a priepustné pre pot a vodné pary.</li><li>Ochranné povlaky matracov nie je možné účinne nahradiť žiadnym iným opatrením.</li><li>Vankúše a prikrývky možno namiesto špeciálnych obliečok ošetrovať pravidelným praním. Aby bol tento náhradný postup skutočne účinný, je potrebné prať prikrývky a vankúše každý týždeň, a to najmenej pri 60 °C. Suché čistenie môže síce roztoče zabiť, ich alergény však neodstraňuje.</li><li>Nevyhnutné je aj pravidelné a časté pranie všetkej posteľnej bielizne.</li><li>Zo spálne v maximálne možnej miere odstráňte koberce a bytové textílie.</li><li>Odstráňte aj vypchaté hračky s textilnými povrchmi a ďalšie náročne omývateľné a čalúnené predmety, pokiaľ nejde o špeciálne výrobky pre alergikov. Ak takéto hračky v spálni zostávajú, majú sa tiež často prať, a to rovnako ako lôžkoviny pri 60 °C.</li><li>Funkčné a účinné obliečky nepriepustné pre roztočové alergény musia byť zhotovené zo špeciálnych textílií, vyrobených len na tento účel. Kvalitu a účinnosť takých obliečok odporúčame overiť, najlepšie u informovaného alergológa.</li><li>V spálni udržujte optimálnu relatívnu vlhkosť vzduchu, t.j. približne 50 %.</li><br></br><b>II. skupina</b> - vhodné a doplňujúce protiroztočové opatreniaIch uskutočnenie je bez realizácie predchádzajúcich opatrení nedostatočne účinné. Táto skupina sa týka celého bytu.<li>Odporúčame jednoduché zariadenie miestností, umožňujúce bezproblémové upratovanie a odstraňovanie prachu.</li><li>V miestnostiach znižujte relatívnu vlhkosť vzduchu, najlepšie na hodnotu približne 50 %.</li><li>Koberce je vhodnejšie odstrániť, než sa akýmkoľvek spôsobom snažiť zbavovať roztočov v nich. Najvhodnejšie podlahové krytiny sú také, ktoré sa dajú stierať navlhko.</li><li>Ostatný bytový textil, predovšetkým závesy a pokrývky, sa odporúča čo najviac obmedziť a pravidelne prať pri 60 °C.</li><li>Nábytok je vhodnejšie voliť nečalúnený a nepotiahnutý látkou.</li><li>Odevy a iné predmety zadržiavajúce prach uzatvárajte v skriniach.</li><li>Pri upratovaní najskôr zotrite prach v celej miestnosti navlhko, vhodné sú špeciálne utierky.</li><li>Ak je to možné, spálňu zo suterénu presťahujte do vyššieho poschodia.Deti by sa nemali hrať v posteliach a na pohovkách, skákať tam a viesť vankúšové boje.</li><br></br><b>III. skupina</b> - náhradné a pomocné protiroztočové opatrenia.Odporúča sa v prípade ponechania koberca, čalúneného nábytku a textilných predmetov. Ani tá najdokonalejšia údržba kobercov a čalúneného nábytku nemôže zaistiť odporúčané zníženie množstva alergénov v miestnostiach. Ak si ich napriek tomu ponecháte, odporúčame:<li>Často luxujte koberce a čalúnený nábytok vysávačom vybaveným zdvojenými stenami vrecúšok a HEPA filtrom. Pritom používajte masku proti vdychovaniu zvírených alergénov.</li><li>Ošetrujte koberce a čalúnený nábytok akaricidmi (prípravky na ničenie roztočov) podľa návodu výrobcu. Ešte účinnejšie pri hubení roztočov môže byť ich niekoľkohodinové vystavovanie mrazu alebo slnečnému svitu s následným dôkladným vyklepaním.</li><li>Ak má byť v byte čalúnený nábytok, mal by mať kožený alebo inak nepriepustný povrch.</li><li>Bytové textílie by mali byť z ľahkého materiálu, ktorý znáša časté pranie pri teplote najmenej 60 °C.</li><li>Hračky s textilným povrchom je nutné pravidelne prať v horúcej vode. Inou možnosťou je ich vymrazenie počas 24 hodín s nasledujúcim vypratím z dôvodu odstránenia alergénov.</li><li>Nevhodné je povaľovanie sa na čalúnenom nábytku, kobercoch alebo pod posteľami.</li>"
   },
+  
   "monitorovanie-sezony": {
     "title": "Monitorovanie sezóny",
     "content": "Alergici by mali sledovať peľovú sezónu, aby sa mohli vyhnúť vysokým koncentráciám alergénov v ovzduší."

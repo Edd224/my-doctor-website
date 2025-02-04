@@ -24,9 +24,9 @@ const Blood = () => {
             <div className="px-5 sm:px-10 pb-8">
                 <h1 className="text-[30px] sm:text-[50px] text-center font-bold">Odbery krvi</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-3 items-baseline gap-12 p-5 sm:p-8 bg-white text-xl text-text rounded-10 space-y-2 sm:space-y-5">
-                    <li>Ráno 07:00 - 07:30<br/> ( streda 06:30 - 07:30 ) <br/><span className="text-base">*ak sa nedohodneme inak </span></li>
-                    <li>Dostatok tekutín pred odberom</li>
-                    <li>V prípade akútneho ochorenia termín upravíme po konzultácii</li>
+                    <div>Ráno : 07:00 - 07:30<br /> ( streda 06:30 - 07:30 ) <br /><span className="text-base">*ak sa nedohodneme inak </span></div>
+                    <div>Dostatok tekutín pred odberom</div>
+                    <div>V prípade akútneho ochorenia termín upravíme po konzultácii</div>
                 </div>
             </div>
         </motion.div>

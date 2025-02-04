@@ -34,7 +34,7 @@ const About: FC = () => {
 
       <div className="container mx-auto bg-gradient-to-b from-main p-6 sm:p-8 rounded-20">
         {/* Logá */}
-        <div className="overflow-hidden"> 
+        <div className="overflow-hidden">
           <motion.div
             className="flex space-x-8 sm:space-x-20"
             initial={{ x: "100%" }}
@@ -102,99 +102,115 @@ const About: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Ordinačné hodiny */}
           <motion.div
-            className="flex flex-col items-center justify-center bg-white rounded-10 p-8 shadow-2xl"
+            className="flex flex-col items-center justify-center  rounded-10 p-0 sm:p-8 shadow-2xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <h2 className="text-2xl font-semibold text-text mb-4">
-              {openingHours.title}
-            </h2>
-            <ul className="text-text space-y-4 flex-col sm:flex justify-between sm:justify-between items-center">
-              {openingHours.items.map((item, index) => (
-                <li key={index}>
-                  {item.day}: <strong>{item.hours}</strong>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-col items-center mt-4 text-text">
-              <p>{openingHours.address}</p>
-              <div className="flex items-center cursor-pointer space-x-2 text-white px-4 py-2 rounded-10 bg-gradient-to-br from-primary to-secondary shadow focus:outline-none focus:ring focus:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]">
-                <a
-                  href={openingHours.mapLink}
-                  rel="noopener"
-                  target="_blank"
-                  className="text-xl"
-                >
-                  Zobraziť na mape
-                </a>
-                <MagnifyingGlass size={32} className="animate-pulse" />
+            <div className="relative text-left text-text backdrop-blur-md p-4 sm:p-6 rounded-10 ">
+              <h2 className="text-xl font-semibold mb-4">Ordinačné hodiny</h2>
+              <table className="w-full border-collapse border border-gray-300">
+                <thead>
+                  <tr className="bg-white text-center">
+                    <th className="border border-gray-300 px-4 py-2">Deň</th>
+                    <th className="border border-gray-300 px-4 py-2">Ordinačné hodiny</th>
+                    <th className="border border-gray-300 px-4 py-2">* Čistý ordinačný čas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { day: 'Pondelok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
+                    { day: 'Utorok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
+                    { day: 'Streda', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
+                    { day: 'Štvrtok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
+                    { day: 'Piatok', hours: '07:00 - 15:00', clean: '07:30 - 09:30' },
+                  ].map(({ day, hours, clean }) => (
+                    <tr key={day} className="text-center">
+                      <td className="border text-white border-gray-300 px-4 py-2">{day}</td>
+                      <td className="border text-white border-gray-300 px-4 py-2">{hours}</td>
+                      <td className="border text-white border-gray-300 px-4 py-2">{clean}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className="space-y-2 bg-white p-2">
+                <h4 className='text-xl text-text'>* Čistý ordinačný čas</h4>
+                <p>Čas, v ktorom lekár príjima pacientov za účelom poskytnutia zdravotnej starostlivosti v príslušnej ambulacii. Do čistého ordinačného času sa započítava čas ordinačných hodín schválených príslušným samosprávnym krajom, vyhradený na vyšetrenie pacientov.</p>
+                <p>Do čistého ordinačného času sa nezapočítava čas ordinačných hodín vyhradených na odbery, vyhodnocovanie výsledkov bez prítomnosti pacienta, admnistratívu a konziliárne vyšetrenia.</p>
               </div>
             </div>
           </motion.div>
 
           {/* Informácie */}
           <motion.div
-            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
+            className="flex flex-col justify-center text-text rounded-10 shadow-2xl p-0 sm:p-8"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="text-text font-semibold space-y-3">
-              <h2 className="text-2xl font-semibold">{information.title}</h2>
-              {information.details.map((detail, index) => (
-                <p key={index}>{detail}</p>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Doplnkové informácie */}
-          <motion.div
-            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
-          >
-            <div className="text-text font-semibold text-xl space-y-3 sm:space-y-6">
-              <h2 className="text-2xl font-semibold">{additionalInfo.title}</h2>
-              <div className="p-6 sm:p-0 text-base sm:text-xl">
-                {additionalInfo.details.map((detail, index) => (
+            <div className="pb-10 bg-white relative text-left text-text shadow-xl backdrop-blur-md p-6 rounded-10">
+              <div className="text-text font-semibold space-y-3">
+                <h2 className="text-2xl font-semibold">{information.title}</h2>
+                {information.details.map((detail, index) => (
                   <p key={index}>{detail}</p>
                 ))}
               </div>
-              <div className="flex justify-between items-center sm:space-x-8 space-x-2">
-                {additionalInfo.features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col justify-center items-center p-2 sm:p-0"
-                  >
-                    {getIconComponent(feature.icon)}
-                    <span className="text-sm sm:text-base">{feature.label}</span>
-                  </div>
-                ))}
+              <div className="mt-5">
+                <h3 className='text-text'>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h3>
+                <h4 className='text-text'>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
               </div>
             </div>
+
+            {/* Doplnkové informácie */}
+            <motion.div
+              className="flex justify-center items-center bg-transparent rounded-10 p-5 mt-4 shadow-2xl"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9 }}
+            >
+              <div className="text-white font-semibold text-xl space-y-3 sm:space-y-6">
+                <h2 className="text-2xl font-semibold text-center">{additionalInfo.title}</h2>
+                <div className="p-6 sm:p-0 text-base sm:text-xl">
+                  {additionalInfo.details.map((detail, index) => (
+                    <p key={index}>{detail}</p>
+                  ))}
+                </div>
+                <div className="flex justify-between items-center sm:space-x-8 space-x-2">
+                  {additionalInfo.features.map((feature, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col justify-center items-center p-2 sm:p-0"
+                    >
+                      {getIconComponent(feature.icon)}
+                      <span className="text-sm sm:text-base">{feature.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+
           </motion.div>
 
-          {/* Prax a vzdelanie */}
-          <motion.div
-            className="flex justify-center items-center bg-white rounded-10 p-8 shadow-2xl"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <div className="text-text font-semibold space-y-6">
-              <h2 className="text-2xl font-semibold">{education.title}</h2>
-              <div>
-                {education.qualifications.map((qualification, index) => (
-                  <p key={index}>{qualification}</p>
-                ))}
-              </div>
-              <p>{education.licenses}</p>
-            </div>
-          </motion.div>
+
         </div>
-
+        {/* Prax a vzdelanie */}
+        <motion.div
+          className="flex  items-center bg-white rounded-10 mt-4 p-4 sm:p-16 shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="text-text font-semibold space-y-6">
+            <h2 className="text-2xl font-semibold">{education.title}</h2>
+            <div>
+              {education.qualifications.map((qualification, index) => (
+                <p key={index}>{qualification}</p>
+              ))}
+            </div>
+            <p>{education.licenses}</p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
