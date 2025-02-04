@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Car, MagnifyingGlass, Timer, Wheelchair } from "@phosphor-icons/react";
+import { Car, Timer, Wheelchair } from "@phosphor-icons/react";
 import Image from "next/image";
 import AboutData from "../../public/data/AboutData.json";
 import { motion } from "framer-motion"; // Importujeme Framer Motion
@@ -9,7 +9,6 @@ import { motion } from "framer-motion"; // Importujeme Framer Motion
 const About: FC = () => {
   const {
     sectionTitle,
-    openingHours,
     information,
     additionalInfo,
     education,
