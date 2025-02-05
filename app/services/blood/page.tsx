@@ -16,7 +16,7 @@ const Blood = () => {
 
     return (
         <motion.div
-            className="bg-gradient-to-bl from-main rounded-20"
+            className="bg-gradient-to-b from-main rounded-20"
             initial="hidden"
             animate="visible"
             variants={containerVariants}

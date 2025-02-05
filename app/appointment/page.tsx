@@ -74,9 +74,9 @@ const Appointment: FC = () => {
               <h2 className="text-lg sm:text-xl text-text font-bold text-center">
                 Objednať sa môžete:
               </h2>
-              <ul className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+              <ul className="flex flex-col sm:flex-row gap-2 sm:gap-8">
                 {data.orderingOptions.map((option, index) => (
-                  <li key={index} className="text-sm sm:text-base">
+                  <li key={index} className="text-sm sm:text-xl">
                     {option}
                   </li>
                 ))}
@@ -102,14 +102,14 @@ const Appointment: FC = () => {
               </a>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="mt-8 text-sm sm:text-base leading-relaxed space-y-4"
               variants={fadeInUp(1.2)}
             >
               {data.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </div>

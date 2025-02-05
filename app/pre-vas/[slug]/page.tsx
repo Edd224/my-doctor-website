@@ -50,11 +50,9 @@ const Article = () => {
           {article.videos.map((video, index) => (
             <div key={index} className="h-full flex flex-col">
               {/* Nadpisy majú rovnakú výšku */}
-              <h3 className="text-2xl font-medium py-2 min-h-[64px] flex items-center justify-center text-center">
-                {video.title}
-              </h3>
+              <h3 className="text-2xl text-white font-medium py-2 flex items-center justify-center text-center" dangerouslySetInnerHTML={{ __html: video.title}}></h3>
               {/* Video natiahneme tak, aby boli všetky rovnaké */}
-              <div className="flex-1 flex items-center">
+              <div className=" flex items-center">
                 <iframe
                   className="w-full h-full aspect-video rounded-10"
                   src={video.url}

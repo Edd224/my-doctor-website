@@ -6,6 +6,7 @@ import { Metadata } from "next";
 
 import { Urbanist } from "next/font/google";
 import TopBar from "@/components/Topbar";
+import CookieConsent from "@/components/CookieConsent";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
       </head>
       <body className={urbanist.className}>
         <div className="min-h-screen flex flex-col bg-gradient-to-bl from-primary to-secondary">
+          <CookieConsent />
           <TopBar />
           <Header /> {/* Navigácia sa zobrazí na všetkých stránkach */}
           <main className="container flex-1 py-10">{children}</main> {/* Tento blok teraz vyplní všetok dostupný priestor */}

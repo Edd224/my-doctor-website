@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Car, Timer, Wheelchair } from "@phosphor-icons/react";
+import { Asclepius, Car, ClockCountdown, Info, Student, Timer, Wheelchair } from "@phosphor-icons/react";
 import Image from "next/image";
 import AboutData from "../../public/data/AboutData.json";
 import { motion } from "framer-motion"; // Importujeme Framer Motion
@@ -106,7 +106,8 @@ const About: FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <div className="relative text-left text-text backdrop-blur-md p-4 sm:p-6 rounded-10 ">
+            <ClockCountdown size={32} />
+            <div className="relative text-center text-text backdrop-blur-md p-4 sm:p-6 rounded-10 ">
               <h2 className="text-xl font-semibold mb-4">Ordinačné hodiny</h2>
               <table className="w-full border-collapse border border-gray-300">
                 <thead>
@@ -132,7 +133,7 @@ const About: FC = () => {
                   ))}
                 </tbody>
               </table>
-              <div className="space-y-2 bg-white p-2">
+              <div className="space-y-2 bg-white p-2 text-left">
                 <h4 className='text-xl text-text'>* Čistý ordinačný čas</h4>
                 <p>Čas, v ktorom lekár príjima pacientov za účelom poskytnutia zdravotnej starostlivosti v príslušnej ambulacii. Do čistého ordinačného času sa započítava čas ordinačných hodín schválených príslušným samosprávnym krajom, vyhradený na vyšetrenie pacientov.</p>
                 <p>Do čistého ordinačného času sa nezapočítava čas ordinačných hodín vyhradených na odbery, vyhodnocovanie výsledkov bez prítomnosti pacienta, admnistratívu a konziliárne vyšetrenia.</p>
@@ -142,21 +143,20 @@ const About: FC = () => {
 
           {/* Informácie */}
           <motion.div
-            className="flex flex-col justify-center text-text rounded-10 shadow-2xl p-0 sm:p-8"
+            className="flex flex-col justify-center items-center space-y-12 text-text rounded-10 shadow-2xl p-0 sm:p-8"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-          >
-            <div className="pb-10 bg-white relative text-left text-text shadow-xl backdrop-blur-md p-6 rounded-10">
+          >            
+            <Info size={32} className="text-white text-center" />
+            <h2 className="text-2xl font-semibold">{information.title}</h2>
+
+            <div className="pb-5 bg-white relative text-left text-text shadow-xl backdrop-blur-md p-6 rounded-10">
+
               <div className="text-text font-semibold space-y-3">
-                <h2 className="text-2xl font-semibold">{information.title}</h2>
                 {information.details.map((detail, index) => (
                   <p key={index}>{detail}</p>
                 ))}
-              </div>
-              <div className="mt-5">
-                <h3 className='text-text'>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h3>
-                <h4 className='text-text'>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
               </div>
             </div>
 
@@ -168,7 +168,7 @@ const About: FC = () => {
               transition={{ duration: 0.9 }}
             >
               <div className="text-white font-semibold text-xl space-y-3 sm:space-y-6">
-                <h2 className="text-2xl font-semibold text-center">{additionalInfo.title}</h2>
+                <h2 className="text-2xl font-semibold text-text text-center">{additionalInfo.title}</h2>
                 <div className="p-6 sm:p-0 text-base sm:text-xl">
                   {additionalInfo.details.map((detail, index) => (
                     <p key={index}>{detail}</p>
@@ -195,13 +195,30 @@ const About: FC = () => {
         </div>
         {/* Prax a vzdelanie */}
         <motion.div
-          className="flex  items-center bg-white rounded-10 mt-4 p-4 sm:p-16 shadow-2xl"
+          className="flex flex-col sm:flex-row justify-between items-center bg-white rounded-10 mt-4 p-4 sm:p-12 shadow-2xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="text-text font-semibold space-y-6">
-            <h2 className="text-2xl font-semibold">{education.title}</h2>
+          <div className="w-full sm:w-1/2 py-4">
+            <div className="text-text space-y-10">
+              <div className="flex">
+                <h4 className=" text-2xl font-semibold mr-2">Personál</h4>
+                <Asclepius size={32} />
+              </div>
+              <div>
+                <h4 className=''>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h4>
+                <h4 className=''>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
+                <p>Telefónne číslo: <strong className="text-xl sm:text-2xl">+421 918 243 490</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-text font-semibold space-y-6 w-full sm:w-1/2 py-4">
+            <div className="flex">
+              <h2 className="text-2xl font-semibold mr-2">{education.title}</h2>
+              <Student size={32} />
+            </div>
             <div>
               {education.qualifications.map((qualification, index) => (
                 <p key={index}>{qualification}</p>

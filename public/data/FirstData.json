@@ -1,43 +1,52 @@
 {
-    "heading": "Prvé vyšetrenie",
-    "importantNotice": [
-      "* Vzhľadom k objednávaniu niekoľko týždňov či mesiacov vopred vás prosíme, aby ste si večer pred termínom overili na našej stránke, či nasledujúci deň ordinujeme."
-    ],
-    "importantWarnings": [
-      "Doporučujem overiť na ečasenke či ordinujeme, či objednávame nových pacientov."
-    ],
-    "whatYouNeed": [
-      {
-        "title": "1. Odporúčanie od lekára",
-        "description": "Odporúčanie je nevyhnutné, aby sme mohli účtovať vyšetrenie vašej zdravotnej poisťovni.",
-        "items": [
-          "Od lekára zmluvného s vašou poisťovňou.",
-          "Ak odporúčajúci lekár nemá zmluvu, vyšetrenie si pacient hradí sám."
-        ]
-      },
-      {
-        "title": "2. Obsah odporúčania",
-        "description": "Odporúčanie musí obsahovať:",
-        "items": [
-          "Výpis zo zdravotnej dokumentácie (opis zdravotného stavu, výsledky vyšetrení, prehľad liečby).",
-          "Cieľ a odôvodnenie odporúčania.",
-          "Dátum vystavenia a identifikáciu ošetrujúceho lekára."
-        ]
-      }
-    ],
-    "appointmentMethods": [
-      "Osobne, po telefonickom dohovore s lekárom alebo sestrou",
-      "Po vyplnení dotazníka nového pacienta",
-      "Na portáli ečasenka.sk"
-    ],
-    "firstExaminationTimes": {
-      "Monday": ["10:30", "12:30"],
-      "Tuesday": ["10:00", "12:00"],
-      "Wednesday": ["9:00", "11:00"],
-      "Thursday": ["10:00", "13:40"],
-      "Friday": ["9:00", "9:30", "11:00"]
+  "heading": "Prvé vyšetrenie",
+  "importantNotice": [
+    "* Vzhľadom k objednávaniu niekoľko týždňov či mesiacov vopred vás prosíme, aby ste si večer pred termínom overili na našej stránke, či nasledujúci deň ordinujeme."
+  ],
+  "importantWarnings": [
+    "Doporučujem overiť na ečasenke či ordinujeme, či objednávame nových pacientov."
+  ],
+  "whatYouNeed": [
+    {
+      "title": "1. Odporúčanie od lekára",
+      "description": "Odporúčanie je nevyhnutné, aby sme mohli účtovať vyšetrenie vašej zdravotnej poisťovni.",
+      "items": [
+        "Od lekára zmluvného s vašou poisťovňou.",
+        "Ak odporúčajúci lekár nemá zmluvu, vyšetrenie si pacient hradí sám."
+      ]
     },
-    "warnings": [
-    ]
-  }
-  
+    {
+      "title": "2. Obsah odporúčania",
+      "description": "Odporúčanie musí obsahovať:",
+      "items": [
+        "Výpis zo zdravotnej dokumentácie (opis zdravotného stavu, výsledky vyšetrení, prehľad liečby).",
+        "Cieľ a odôvodnenie odporúčania.",
+        "Dátum vystavenia a identifikáciu ošetrujúceho lekára."
+      ]
+    }
+  ],
+  "appointmentMethods": [
+    {
+      "text": "Osobne, po telefonickom dohovore s lekárom alebo sestrou",
+      "link": {
+        "title": "Kontakt",
+        "href": "/contact"
+      }
+    },
+    {
+      "text": "Po vyplnení dotazníka nového pacienta na portáli",
+      "link": {
+        "title": "eČasenka",
+        "href": "https://www.ecasenka.sk/ordinacia/mudrmarinahantakova-lekar/vstup"
+      }
+    }
+  ],
+  "firstExaminationTimes": {
+    "Monday": ["10:30", "12:30"],
+    "Tuesday": ["10:00", "12:00"],
+    "Wednesday": ["9:00", "11:00"],
+    "Thursday": ["10:00", "13:40"],
+    "Friday": ["9:00", "9:30", "11:00"]
+  },
+  "warnings": []
+}

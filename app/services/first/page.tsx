@@ -12,13 +12,21 @@ interface WhatYouNeedItem {
     items: string[];
 }
 
+interface AppointmentMethod {
+    text: string;
+    link?: {
+        title: string;
+        href: string;
+    }
+}
+
 interface FirstData {
     heading: string;
     importantNotice: string[];
     importantWarnings: string[];
     whatYouNeed: WhatYouNeedItem[]; // Opravený typ
     warnings: string[];
-    appointmentMethods: string[];
+    appointmentMethods: AppointmentMethod[];
     firstExaminationTimes: Record<string, string[]>;
 }
 const First = () => {
@@ -192,31 +200,25 @@ const First = () => {
                                             Spôsoby objednania:
                                         </h3>
                                         <ul className="list-disc pl-6 mb-4 space-y-3">
-                                            {jsonData.appointmentMethods.map((method: string, index: number) => (
+                                            {jsonData.appointmentMethods.map((method: AppointmentMethod, index: number) => (
                                                 <motion.li variants={listItemVariants} key={index}>
-                                                    {method}
+                                                    {method.text} {/* Zobrazenie textu */}
+
+                                                    {method.link && ( // Ak existuje odkaz, zobraz ho
+                                                        <a
+                                                            href={method.link.href}
+                                                            className="text-blue-500 underline ml-2"
+                                                            target={method.link.href.startsWith("http") ? "_blank" : "_self"}
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            {method.link.title}
+                                                        </a>
+                                                    )}
                                                 </motion.li>
                                             ))}
                                         </ul>
                                     </motion.div>
 
-                                    {/* Termíny pre prvé vyšetrenie */}
-                                    {/* <motion.div
-                                        className="w-full sm:w-1/2 flex flex-col justify-around items-start space-y-4 m-0 sm:m-2 p-8 bg-gradient-to-b from-teal-300/50 to-slate-100 rounded-10 hover:scale-105 duration-500 shadow-lg"
-                                        variants={containerVariants}
-                                        custom={11}
-                                    >
-                                        <h3 className="text-xl font-semibold mt-4 text-text">
-                                            Termíny pre prvé vyšetrenie:
-                                        </h3>
-                                        <ul className="list-disc pl-6 mb-4">
-                                            {Object.keys(jsonData.firstExaminationTimes).map((day: string) => (
-                                                <motion.li variants={listItemVariants} key={day}>
-                                                    <strong>{day}:</strong> {jsonData.firstExaminationTimes[day].join(", ")}
-                                                </motion.li>
-                                            ))}
-                                        </ul>
-                                    </motion.div> */}
                                 </div>
                             </div>
                         </motion.div>

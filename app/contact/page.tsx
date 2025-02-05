@@ -72,12 +72,12 @@ const Contact: FC = () => {
             className="bg-white text-text p-8 space-y-4 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
           >
             <div className="space-y-5">
-              <h2 className="text-2xl font-bold text-text">Kontaktné údaje</h2>
+              <h2 className="text-3xl font-bold text-text">Kontaktné údaje</h2>
               <p className="text-base leading-relaxed">
                 <strong>{contactData.contactInfo.clinicName}</strong>
               </p>
             </div>
-            <div>
+            <div className="text-xl">
               <p>{contactData.contactInfo.doctorName}</p>
               <p>{contactData.contactInfo.address}</p>
               <p>
@@ -105,11 +105,11 @@ const Contact: FC = () => {
             className="bg-white text-text p-8 rounded-10 shadow-2xl transform transition duration-300 hover:scale-105 flex-1"
           >
             <h2 className="text-2xl font-bold text-text mb-4">Kde nás nájdete</h2>
-            <p className="text-base leading-relaxed">
+            <p className="text-xl leading-relaxed">
               {contactData.clinicDescription.whereToFind}
             </p>
-            <p className="mt-4">{contactData.clinicDescription.floorDescription}</p>
-            <p className="mt-4 font-bold">{contactData.contactInfo.location}</p>
+            <p className="mt-4 text-xl">{contactData.clinicDescription.floorDescription}</p>
+            <p className="mt-4 font-bold text-xl">{contactData.contactInfo.location}</p>
           </motion.div>
         </div>
 
