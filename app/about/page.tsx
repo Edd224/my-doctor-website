@@ -101,7 +101,7 @@ const About: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Ordinačné hodiny */}
           <motion.div
-            className="flex flex-col items-center justify-center  rounded-10 p-0 sm:p-8 shadow-2xl"
+            className="flex flex-col items-center justify-center  rounded-10 p-0 sm:p-8 shadow-2xl border-t"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -143,7 +143,7 @@ const About: FC = () => {
 
           {/* Informácie */}
           <motion.div
-            className="flex flex-col justify-center items-center space-y-12 text-text rounded-10 shadow-2xl p-0 sm:p-8"
+            className="flex flex-col justify-center items-center space-y-12 text-text rounded-10 shadow-2xl p-0 sm:p-8 border-t"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
@@ -162,7 +162,7 @@ const About: FC = () => {
 
             {/* Doplnkové informácie */}
             <motion.div
-              className="flex justify-center items-center bg-transparent rounded-10 p-5 mt-4 shadow-2xl"
+              className="flex justify-center items-center bg-transparent rounded-10 p-5 mt-4 shadow-2xl border-t"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}

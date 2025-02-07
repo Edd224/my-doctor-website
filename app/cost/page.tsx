@@ -34,7 +34,7 @@ const Cost = () => {
 
 
             <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 ">
-                <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden border-t">
                     <p className="text-center font-bold text-sm sm:text-[16px] p-2  bg-primary text-white">Cenník poplatkov LEKIA s.r.o - platnosť od 1.11.2021</p>
                     <div className="px-4 sm:px-0">
                         <table className="w-full border-collapse">
@@ -65,7 +65,7 @@ const Cost = () => {
                 </div>
 
 
-                <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden border-t">
                     <h3 className="text-center font-bold text-nowrap text-sm sm:text-[16px] p-2 bg-primary text-white">Vyšetrenia na vlastnú žiadosť alebo mimo zdravotného poistenia</h3>
                     <div className="px-4 sm:px-0">
                         <table className="w-full border-collapse">
