@@ -55,13 +55,18 @@ const Home: React.FC = () => {
         )}
       </div>
 
-      <div className=" flex justify-center items-center ">
-        <Image
-          src="/logo.svg" 
-          alt="test"
-          width={500}
-          height={500}
-        />
+      <div className=" flex flex-col sm:flex-row justify-center items-center ">
+        <div className="w-full sm:w-1/2 flex p-4 ml-5">
+          <h1 className='text-text font-bold text-4xl sm:text-6xl bg-gradient-to-bl from-emerald-400 via-text to-main text-transparent bg-clip-text'>Alergologická a imunologická ambulancia MUDr. Hantáková</h1>
+        </div>
+        <div className="w-full sm:w-1/2">
+          <Image
+            src="/logo.svg"
+            alt="test"
+            width={600}
+            height={600}
+          />
+        </div>
       </div>
     </section>
   );

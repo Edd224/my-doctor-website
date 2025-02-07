@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   description: "Ponúkame diagnostiku a liečbu alergií pre jednotlivcov a firmy.",
   keywords: "alergológ, alergie, diagnostika, liečba alergií, zdravie",
   openGraph: {
-    title: "Alergológ - Profesionálne služby alergológa",
-    description: "Ponúkame diagnostiku a liečbu alergií pre jednotlivcov a firmy.",
+    title: "Profesionálne služby alergológa",
+    description: "Ponúkame diagnostiku a liečbu alergií",
     url: "https://tvoja-webstranka.sk",
     siteName: "Alergológ",
     images: [
