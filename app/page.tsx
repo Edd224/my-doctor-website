@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
   return (
     <section
-      className="relative min-h-[60vh] flex flex-col items-center justify-center px-8 rounded-20"
+      className="relative min-h-[60vh] flex flex-col items-center justify-center rounded-20"
     >
       {/* Zobrazenie údajov o ordinácii v ľavom hornom rohu */}
       <div className="absolute top-0 left-0 p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
@@ -55,11 +55,11 @@ const Home: React.FC = () => {
         )}
       </div>
 
-      <div className=" flex flex-col sm:flex-row justify-center items-center ">
-        <div className="w-full sm:w-1/2 flex p-4 ml-5">
-          <h1 className='text-text font-bold text-4xl sm:text-6xl bg-gradient-to-bl from-emerald-400 via-text to-main text-transparent bg-clip-text'>Alergologická a imunologická ambulancia MUDr. Hantáková</h1>
+      <div className=" flex flex-col sm:flex-row justify-center items-center p-8 mt-6 border-t bg-gradient-to-b to-main rounded-20 shadow-xl space-y-8 sm:space-y-0">
+        <div className="w-full sm:w-1/2 flex  ">
+          <h1 className='text-text font-bold text-3xl sm:text-6xl bg-gradient-to-l from-emerald-400  to-text text-transparent bg-clip-text'>Alergologická a imunologická ambulancia MUDr. Hantáková</h1>
         </div>
-        <div className="w-full sm:w-1/2">
+        <div className="w-full sm:w-1/2 shadow-xl rounded-10 p-4">
           <Image
             src="/logo.svg"
             alt="test"

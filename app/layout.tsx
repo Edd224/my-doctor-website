@@ -53,7 +53,7 @@ export default function RootLayout({
           <CookieConsent />
           <TopBar />
           <Header /> {/* Navigácia sa zobrazí na všetkých stránkach */}
-          <main className="container flex-1 py-10">{children}</main> {/* Tento blok teraz vyplní všetok dostupný priestor */}
+          <main className="container flex-1 py-10 mt-[100px]">{children}</main> {/* Tento blok teraz vyplní všetok dostupný priestor */}
           <Footer /> {/* Footer sa zobrazí na všetkých stránkach */}
         </div>
       </body>

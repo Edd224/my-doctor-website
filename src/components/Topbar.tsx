@@ -6,7 +6,7 @@ import { PhoneIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 const TopBar: React.FC = () => {
     return (
-        <div className="w-full h-[50px] items-center justify-between hidden md:flex">
+        <div className="w-full h-[50px] fixed bg-main z-10 items-center justify-between hidden md:flex">
             {/* Kontaktné informácie */}
             <div className="flex items-center text-text justify-end w-2/3 pr-3 space-x-8 text-sm">
                 {/* <div className="flex items-center space-x-2">
