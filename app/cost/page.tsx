@@ -5,9 +5,9 @@ const Cost = () => {
         { name: 'Potvrdenia pre administratívne účely na žiadosť poistenca', price: '10€' },
         { name: 'Vyšetrenie hladiny FeNO', price: '15€' },
         { name: 'Poplatok za nedodržanie a blokovanie dohodnutého termínu', price: '5€' },
-        { name: 'Vyšetrenie mimo ordinačného času - prvovyšetrenie', price: '20€' },
+        { name: 'Vyšetrenie mimo ordinačného času - prvovyšetrenie', price: '30€' },
         { name: 'Vyšetrenie mimo ordinačného času - kontrolné', price: '10€' },
-        { name: '* Ročný poplatok za sližby telefonickej a mailovej podpory', price: '30€' },
+        { name: '* Ročný poplatok za služby telefonickej a mailovej podpory', price: '30€' },
     ];
 
     const servicesTwo = [
@@ -57,8 +57,8 @@ const Cost = () => {
                             <h6 className="font-semibold my-2">* Táto služba obsahuje:</h6>
                             <li className="text-sm">Oznámenie o neprítomnosti lekára objednaným pacientom</li>
                             <li className="text-sm">Mailová komunikácia s pacientom - krátke konzultácie ohľadom zdravotného stavu pacienta, poradenstvo apod.</li>
-                            <li className="text-sm">Odosielanie elektronických receptov</li>
-                            <p className="text-sm">Tento poplatok je jednorázový, služba je k dizpozícii 12 mesiacov od jej uhradenia.Mailová podpora je dostupná na adrese <strong>mhantakova@gmail.com</strong>,telefonická na čísle <strong>0918 243 490</strong> počas pracovnej doby ambulacie.</p>
+                            <li className="text-sm">Odosielanie elektronických receptov po vyžiadaní mailom</li>
+                            <p className="text-sm">Tento poplatok je jednorázový, služba je k dispozícii 12 mesiacov od jej uhradenia.Mailová podpora je dostupná na adrese <u>mhantakova@gmail.com</u>,telefonická na čísle <strong>0918 243 490</strong> počas pracovnej doby ambulancie.</p>
                         </div>
                     </div>
 

@@ -98,6 +98,42 @@ const About: FC = () => {
           {sectionTitle}
         </motion.h1>
 
+        {/* Prax a vzdelanie */}
+        <motion.div
+          className="flex flex-col sm:flex-row justify-between items-center bg-white rounded-10 mb-6 p-4 sm:p-12 shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="w-full sm:w-1/2 py-4">
+            <div className="text-text space-y-10">
+              <div className="flex">
+                <h4 className=" text-2xl font-semibold mr-2">Personál</h4>
+                <Asclepius size={32} />
+              </div>
+              <div>
+                <h4 className=''>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h4>
+                <h4 className=''>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
+                <p>Telefónne číslo: <strong className="text-xl sm:text-2xl">+421 918 243 490</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-text font-semibold space-y-6 w-full sm:w-1/2 py-4">
+            <div className="flex">
+              <h2 className="text-2xl font-semibold mr-2">{education.title}</h2>
+              <Student size={32} />
+            </div>
+            <div>
+              {education.qualifications.map((qualification, index) => (
+                <p key={index}>{qualification}</p>
+              ))}
+            </div>
+            <p>{education.licenses}</p>
+          </div>
+        </motion.div>
+
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Ordinačné hodiny */}
           <motion.div
@@ -147,7 +183,7 @@ const About: FC = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-          >            
+          >
             <Info size={32} className="text-white text-center" />
             <h2 className="text-2xl font-semibold">{information.title}</h2>
 
@@ -155,7 +191,7 @@ const About: FC = () => {
 
               <div className="text-text font-semibold space-y-3">
                 {information.details.map((detail, index) => (
-                  <p key={index}>{detail}</p>
+                  <p key={index} dangerouslySetInnerHTML={{ __html:detail}}></p>
                 ))}
               </div>
             </div>
@@ -193,40 +229,6 @@ const About: FC = () => {
 
 
         </div>
-        {/* Prax a vzdelanie */}
-        <motion.div
-          className="flex flex-col sm:flex-row justify-between items-center bg-white rounded-10 mt-4 p-4 sm:p-12 shadow-2xl"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <div className="w-full sm:w-1/2 py-4">
-            <div className="text-text space-y-10">
-              <div className="flex">
-                <h4 className=" text-2xl font-semibold mr-2">Personál</h4>
-                <Asclepius size={32} />
-              </div>
-              <div>
-                <h4 className=''>Lekár: <span className='font-bold text-xl sm:text-2xl text-nowrap'>MUDr.Marína Hantáková</span></h4>
-                <h4 className=''>Zdravotná sestra: <span className='font-bold text-xl sm:text-2xl text-nowrap'>Marta Balážová</span></h4>
-                <p>Telefónne číslo: <strong className="text-xl sm:text-2xl">+421 918 243 490</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-text font-semibold space-y-6 w-full sm:w-1/2 py-4">
-            <div className="flex">
-              <h2 className="text-2xl font-semibold mr-2">{education.title}</h2>
-              <Student size={32} />
-            </div>
-            <div>
-              {education.qualifications.map((qualification, index) => (
-                <p key={index}>{qualification}</p>
-              ))}
-            </div>
-            <p>{education.licenses}</p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -1,10 +1,9 @@
 {
   "heading": "Prvé vyšetrenie",
   "importantNotice": [
-    "* Vzhľadom k objednávaniu niekoľko týždňov či mesiacov vopred vás prosíme, aby ste si večer pred termínom overili na našej stránke, či nasledujúci deň ordinujeme."
   ],
   "importantWarnings": [
-    "Doporučujem overiť na ečasenke či ordinujeme, či objednávame nových pacientov."
+    "Doporučujem overiť na ečasenke či ordinujeme a či <u>aktuálne</u> objednávame nových pacientov."
   ],
   "whatYouNeed": [
     {
@@ -27,7 +26,7 @@
   ],
   "appointmentMethods": [
     {
-      "text": "Osobne, po telefonickom dohovore s lekárom alebo sestrou",
+      "text": "Osobne <u>alebo</u> po telefonickom dohovore s lekárom alebo sestrou",
       "link": {
         "title": "Kontakt",
         "href": "/contact"

@@ -40,7 +40,7 @@ const Testing = () => {
               custom={index + 1}
             >
               <h2 className="text-lg font-bold text-text">{section.title}</h2>
-              <p>{section.content}</p>
+              <p dangerouslySetInnerHTML={{__html:section.content ?? ""}}></p>
             </motion.div>
           ))}
 

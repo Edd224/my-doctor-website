@@ -119,9 +119,7 @@ const First = () => {
                             custom={1}
                         >
                             {jsonData.importantWarnings.map((warning: string, index: number) => (
-                                <motion.li variants={listItemVariants} key={index}>
-                                    {warning}
-                                </motion.li>
+                                <motion.li variants={listItemVariants} key={index} dangerouslySetInnerHTML={{ __html: warning}}></motion.li>
                             ))}
                         </motion.ul>
 
@@ -202,7 +200,7 @@ const First = () => {
                                         <ul className="list-disc pl-6 mb-4 space-y-3">
                                             {jsonData.appointmentMethods.map((method: AppointmentMethod, index: number) => (
                                                 <motion.li variants={listItemVariants} key={index}>
-                                                    {method.text} {/* Zobrazenie textu */}
+                                                    <span dangerouslySetInnerHTML={{ __html:method.text}}></span>
 
                                                     {method.link && ( // Ak existuje odkaz, zobraz ho
                                                         <a

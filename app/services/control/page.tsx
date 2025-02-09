@@ -39,8 +39,8 @@ const Control = () => {
         </div>
       </div>
       <div className="p-8 text-center text-text text-2xl font-semibold">
-        <p>Kontroloné vyšetrenie s rovnakou diagnózou nutné do 24 mesiacov ( bez nového výmenného lístka )</p>
-        <p>- možnosť rýchlejšieho termínu na TOP DOKTOR ( nie pre prvé vyšetrenie )</p>
+        <p>Kontrolné vyšetrenie s rovnakou diagnózou realizované do 24 mesiacov nevyžaduje výmenný lístok</p>
+        <p>Možnosť rýchlejšieho termínu na TOP DOKTOR ( nie však pre prvé vyšetrenie )</p>
         <div className="flex flex-col items-center justify-between mt-4">
           <a
             href="https://www.topdoktor.sk/doktor/alergolog-imunolog/trenciansky-kraj/ilava/10893-mudr-marina-hantakova?gad_source=1&gclid=CjwKCAiAtYy9BhBcEiwANWQQL3hAjqlwvYHsjfuyLvefw7JDXX1wBPvyTTiMIo7V4AqxwzPQHbAq-BoC_okQAvD_BwE"
