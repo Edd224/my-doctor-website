@@ -15,12 +15,12 @@ const urbanist = Urbanist({
 
 export const metadata: Metadata = {
   title: "Alergológ - MUDr. Marína Hantáková",
-  description: "Ponúkame diagnostiku a liečbu alergií pre jednotlivcov a firmy.",
+  description: "Ponúkame diagnostiku a liečbu alergií.",
   keywords: "alergológ, alergie, diagnostika, liečba alergií, zdravie",
   openGraph: {
     title: "Profesionálne služby alergológa",
     description: "Ponúkame diagnostiku a liečbu alergií",
-    url: "https://tvoja-webstranka.sk",
+    url: "https://lekia.sk/",
     siteName: "Alergológ",
     images: [
       {
