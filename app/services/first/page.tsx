@@ -147,7 +147,7 @@ const First = () => {
                                         <ul className="list-disc pl-2 sm:pl-6">
                                             {item.items.map((listItem: string, itemIndex: number) => (
                                                 <motion.li
-                                                    className="text-lg font-semibold underline py-2"
+                                                    className="text-lg font-semibold py-2"
                                                     variants={listItemVariants}
                                                     key={itemIndex}
                                                 >
@@ -205,7 +205,7 @@ const First = () => {
                                                     {method.link && ( // Ak existuje odkaz, zobraz ho
                                                         <a
                                                             href={method.link.href}
-                                                            className="text-blue-500 underline ml-2"
+                                                            className="text-blue-500 ml-2"
                                                             target={method.link.href.startsWith("http") ? "_blank" : "_self"}
                                                             rel="noopener noreferrer"
                                                         >

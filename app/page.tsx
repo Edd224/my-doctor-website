@@ -22,7 +22,7 @@ const Home: React.FC = () => {
 
       <div className=" flex flex-col sm:flex-row justify-center items-center p-8 mt-6 border-t border-l bg-gradient-to-b to-main rounded-20 shadow-xl space-y-8 sm:space-y-0">
         <div className="w-full sm:w-1/2 flex  ">
-          <h1 className='text-text font-bold text-3xl sm:text-6xl bg-gradient-to-l from-emerald-400  to-text text-transparent bg-clip-text'>Ambulancia klinickej imunologie a alergologie <span className='text-nowrap'>MUDr. Hantáková</span></h1>
+          <h1 className='text-text font-bold text-3xl sm:text-6xl bg-gradient-to-l from-emerald-400  to-text text-transparent bg-clip-text'>Ambulancia klinickej imunologie a alergologie <span className='text-nowrap'>MUDr.Marína Hantáková</span></h1>
         </div>
         <div className="w-full sm:w-1/2 shadow-xl rounded-10 p-4 border-t border-l">
           <Image

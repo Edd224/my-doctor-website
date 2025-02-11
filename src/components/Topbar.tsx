@@ -17,7 +17,7 @@ const TopBar: React.FC = () => {
                 </div> */}
                 <div className="flex items-center space-x-2">
                     <MapPinIcon className="h-5 w-5" />
-                    <p>Ľ. Štúra 1920, 01901 Ilava</p>
+                    <p>Štúrova 1920, 01901 Ilava</p>
                 </div>
                 <div className="flex items-center space-x-2">
                     <PhoneIcon className="h-5 w-5" />
