@@ -22,7 +22,7 @@ const TopBar: React.FC = () => {
                 <div className="flex items-center space-x-2">
                     <PhoneIcon className="h-5 w-5" />
                     <a href="tel:+421912345678" className="underline hover:text-black">
-                    +421 918 243 490
+                        +421 918 243 490
                     </a>
                 </div>
             </div>
@@ -33,7 +33,8 @@ const TopBar: React.FC = () => {
                 style={{
                     clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
-            >        <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            >
+                {/* <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -54,7 +55,7 @@ const TopBar: React.FC = () => {
                     >
                         <path d="M24 4.556a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724 9.864 9.864 0 0 1-3.127 1.195 4.916 4.916 0 0 0-8.38 4.482A13.978 13.978 0 0 1 1.671 3.149 4.915 4.915 0 0 0 3.18 9.725a4.902 4.902 0 0 1-2.23-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.918 4.918 0 0 0 4.588 3.417A9.867 9.867 0 0 1 .96 19.085a13.945 13.945 0 0 0 7.548 2.213c9.142 0 14.307-7.721 13.995-14.646A9.935 9.935 0 0 0 24 4.556z" />
                     </svg>
-                </Link>
+                </Link> */}
             </div>
         </div>
     );

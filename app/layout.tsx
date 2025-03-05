@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Alergológ",
     images: [
       {
-        url: "/path-to-your-image.jpg", // URL obrázku pre OG tag
+        url: "/path-to-your-image.jpg", 
         width: 1200,
         height: 630,
         alt: "Alergológ klinika",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image", // môžeš zvoliť iný typ podľa potreby
+    card: "summary_large_image", 
     title: "Alergológ - Profesionálne služby alergológa",
     description: "Ponúkame diagnostiku a liečbu alergií pre jednotlivcov a firmy.",
   },
@@ -52,9 +52,9 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col bg-gradient-to-bl from-primary to-secondary">
           <CookieConsent />
           <TopBar />
-          <Header /> {/* Navigácia sa zobrazí na všetkých stránkach */}
-          <main className="container flex-1 py-10 mt-[100px]">{children}</main> {/* Tento blok teraz vyplní všetok dostupný priestor */}
-          <Footer /> {/* Footer sa zobrazí na všetkých stránkach */}
+          <Header /> 
+          <main className="container flex-1 py-10 mt-[100px]">{children}</main> 
+          <Footer /> 
         </div>
       </body>
     </html>
