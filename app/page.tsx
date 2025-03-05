@@ -1,6 +1,6 @@
 'use client';
 
-import { Warning } from '@phosphor-icons/react';
+// import { Warning } from '@phosphor-icons/react';
 import Image from "next/image"
 
 const Home: React.FC = () => {
