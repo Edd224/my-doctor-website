@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           <>
             <div className="flex justify-center items-center space-x-2">
               <Warning size={32} className='animate-pulse' />
-              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold">Neordinujeme 13.3. a 14.3.2025</p>
+              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold">Neordinujeme : 16.4.2025 - 17.4.2025,<br/> 23.5.2025 až 30.5.2025</p>
             </div>
           </>
       
