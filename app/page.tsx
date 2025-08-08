@@ -1,6 +1,6 @@
 'use client';
 
-import { Warning } from '@phosphor-icons/react';
+// import { Warning } from '@phosphor-icons/react';
 import Image from "next/image"
 
 const Home: React.FC = () => {
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       className="relative min-h-[60vh] flex flex-col items-center justify-center rounded-20"
     >
       {/* Zobrazenie údajov o ordinácii v ľavom hornom rohu */}
-      <div className="absolute top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
+      {/* <div className="absolute top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
        
           <>
             <div className="flex justify-center items-center space-x-2">
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             </div>
           </>
       
-      </div>
+      </div> */}
 
       <div className=" flex flex-col sm:flex-row justify-center items-center p-8 mt-6 border-t border-l bg-gradient-to-b to-main rounded-20 shadow-xl space-y-8 sm:space-y-0">
         <div className="w-full sm:w-1/2 flex  ">
