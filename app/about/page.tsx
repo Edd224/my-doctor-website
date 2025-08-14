@@ -155,11 +155,11 @@ const About: FC = () => {
                 </thead>
                 <tbody>
                   {[
-                    { day: 'Pondelok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
-                    { day: 'Utorok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
-                    { day: 'Streda', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
-                    { day: 'Štvrtok', hours: '07:00 - 15:00', clean: '07:30 - 14:30' },
-                    { day: 'Piatok', hours: '07:00 - 15:00', clean: '07:30 - 09:30' },
+                    { day: 'Pondelok', hours: '07:00 - 14:30', clean: '07:30 - 14:00' },
+                    { day: 'Utorok', hours: '07:00 - 14:30', clean: '07:30 - 14:00' },
+                    { day: 'Streda', hours: '07:00 - 14:00', clean: '07:30 - 13:30' },
+                    { day: 'Štvrtok', hours: '07:00 - 14:30', clean: '07:30 - 14:00' },
+                    { day: 'Piatok', hours: '07:00 - 10:00', clean: '07:30 - 09:30' },
                   ].map(({ day, hours, clean }) => (
                     <tr key={day} className="text-center">
                       <td className="border text-white border-gray-300 px-4 py-2">{day}</td>
