@@ -40,6 +40,7 @@
       {
         "title": "Pre Vás",
         "submenu": [
+          { "title": "InhalujSprávne.sk", "link": "https://inhalujspravne.sk/?utm_source=substack&utm_medium=email","external": true },
           { "title": "Návod IMUNOR", "link": "/pre-vas/navod-imunor" },
           { "title": "Video inhalačná technika", "link": "/pre-vas/video-inhalacna-technika" },
           { "title": "Epipen, JEXT - video návod", "link": "/pre-vas/epipen-jext" },
