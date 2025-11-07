@@ -19,6 +19,11 @@
             "title": "Kontrolné vyšetrenie",
             "link": "/services/control"
           },
+                    {
+            "title": "Vyšetrenia tráviaceho traktu",
+            "link": "/services/digestiveTract"
+          },
+
           {
             "title": "Testovanie",
             "link": "/services/testing"

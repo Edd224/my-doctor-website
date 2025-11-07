@@ -9,12 +9,13 @@ const Home: React.FC = () => {
       className="relative min-h-[60vh] flex flex-col items-center justify-center rounded-20"
     >
       {/* Zobrazenie údajov o ordinácii v ľavom hornom rohu */}
-      <div className="absolute top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
+      <div className="absolute my-5 top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
        
           <>
-            <div className="flex justify-center items-center space-x-2">
+            <div className="flex flex-col justify-center space-x-2">
               <Warning size={32} className='animate-pulse' />
-              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold flex">Neordinujeme : <span className='flex px-2'> 22.10. až 24.10. 2025</span></p>
+              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold flex">Neordinujeme : <span className='flex px-2'> 20.11. 2025,<br/>21.11. 2025,<br/> 24.11.2025</span></p>
+              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold flex"><span className='flex px-2'>17.11.2025</span>- Ordinujeme</p>
             </div>
           </>
       
