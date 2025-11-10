@@ -1,0 +1,71 @@
+{
+  "heading": "Diagnostika laktózovej intolerancie",
+  "importantNotice": [
+  ],
+  "importantWarnings": [
+    ""
+  ],
+  "whatYouNeed": [
+    {
+      "title": "Prejavy laktózovej intolerancie",
+      "description": "",
+      "items": [
+        "Hnačky – kyslo zapáchajúce",
+        "kolikovité bolesti brucha",
+        "nafukovanie",
+        "prelievanie črevného obsahu, škvŕkanie v bruchu",
+        "pocity plného brucha",
+        "zvýšený odchod plynov",
+        "u dojčiat celkové neprospievanie, úbytok na hmotnosti"
+      ]
+
+    },
+    {
+      "title": "Ako sa pripraviť na vyšetrenie?",
+      "description": "",
+      "items": [
+        "Na vyšetrenie príďte nalačno  ( 8-12  hodín   pred vyšetrením nejesť,  nefajčiť,  nekonzumovať alkohol, nežuť   žuvačky, cukríky  – obmedziť aj pitie  tekutín na malé množstvo  vody na zapitie liekov ). U   dojčiat  od tretej  hodiny rannej nepiť a nejesť.",
+        "Aspoň hodinu pred vyšetrením si umyte zuby.",
+        "Pred vyšetrením 30 minút necvičiť.",
+        "Ráno zapite chronicky predpísané lieky malým množstvom vody (okrem liekov na cukrovku!, tie užijete až po realizácii testu, zoberte si na vyšetrenie so sebou).",
+        "Deň pred testom nepite mlieko a nejedzte mliečne výrobky.",
+        "Týždeň pred testom vysaďte probiotiká.",
+        "Týždeň pred testom neužívať inhibítory protónovej pumpy (Helicid, Nolpaza, Emanera, Pantoprazol…).",
+        "Týždeň pred testom neužívať vitamíny, výživové doplnky obsahujúce fruktózu alebo laktózu.",
+        "Test môžete absolvovať najskôr 4 týždne po dobratí antibiotík.",
+        "Minimálne 3 dni pred testom neužívajte žiadne laxatíva a prípravky obsahujúce laktulózu.",
+        "12 hodín pred testom nefajčite!",
+        "Rátajte s tým, že vyšetrenie bude trvať cca 3-4 hodiny.",
+        "Upozornite vyšetrujúceho, že ste diabetik a aký druh liečby používate (diabetik na inzulíne vyšetrenie nemôže absolvovať, je kontraindikovaný).",
+        "1 minútu pred vyšetrením  je potrebné v kľude sedieť a  pokojne dýchať.",
+        "Pokiaľ nemáte informácie, či môžete konzumovať konkrétnu potravinu, je vhodné sa jej radšej vyhnúť."
+      ]
+    }
+  ],
+  "appointmentMethods": [
+    {
+      "text": "základom je vylúčenie (obmedzenie) konzumácie mlieka a mliečnych výrobkov",
+      "link": {
+        "title": "Kontakt",
+        "href": "/contact"
+      }
+    },
+    {
+      "text": "farmaceutické prípravky vo forme tabliet, ktoré obsahujú enzým laktázu a zlepšujú tak toleranciu produktov, ktoré obsahujú veľa laktózy",
+      "link": {
+        "title": "eČasenka",
+        "href": "https://www.ecasenka.sk/ordinacia/mudrmarinahantakova-lekar/vstup"
+      }
+    }
+  ],
+  "firstExaminationTimes": {
+    "Monday": ["10:30", "12:30"],
+    "Tuesday": ["10:00", "12:00"],
+    "Wednesday": ["9:00", "11:00"],
+    "Thursday": ["10:00", "13:40"],
+    "Friday": ["9:00", "9:30", "11:00"]
+  },
+  "warnings": []
+
+
+}
