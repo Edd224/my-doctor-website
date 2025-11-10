@@ -61,13 +61,6 @@ const Lactosa = () => {
         }),
     };
 
-    const fadeInVariants = {
-        hidden: { opacity: 0 },
-        visible: (custom: number) => ({
-            opacity: 1,
-            transition: { duration: 0.8, delay: custom * 0.2 }, // Custom delay
-        }),
-    };
 
     return (
         <motion.div
