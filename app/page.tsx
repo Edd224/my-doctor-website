@@ -1,6 +1,6 @@
 'use client';
 
-// import { Warning } from '@phosphor-icons/react';
+import { Warning } from '@phosphor-icons/react';
 
 import Image from "next/image"
 
@@ -10,16 +10,16 @@ const Home: React.FC = () => {
       className="relative min-h-[60vh] flex flex-col items-center justify-center rounded-20"
     >
       {/* Zobrazenie údajov o ordinácii v ľavom hornom rohu */}
-      {/* <div className="absolute my-5 top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
+      <div className="absolute my-5 top-0 left-0 border-t p-2 bg-black/20 text-white text-sm sm:text-xl rounded-10 shadow-xl">
        
           <>
             <div className="flex flex-col justify-center space-x-2">
               <Warning size={32} className='animate-pulse' />
-              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold flex">Neordinujeme : <span className='flex px-2'> 23.12. 2025,<br/>30.12. 2025,<br/> 31.12.2025</span></p>
+              <p className="bg-gradient-to-r from-red-700 p-2 rounded-10 font-semibold flex">Neordinujeme : <span className='flex px-2'> 31.3. - 15.4. 2025</span></p>
             </div>
           </>
       
-      </div> */}
+      </div>
 
       <div className=" flex flex-col sm:flex-row justify-center items-center p-8 mt-6 border-t border-l bg-gradient-to-b to-main rounded-20 shadow-xl space-y-8 sm:space-y-0">
         <div className="w-full sm:w-1/2 flex  ">
